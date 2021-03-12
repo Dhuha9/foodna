@@ -1,0 +1,31 @@
+                
+name: test pull request
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+            node-version: 14.x
+
+      - name: pull request test
+        run: |
+           yarn
+           yarn test
+           yarn lint
+           yarn build
+
