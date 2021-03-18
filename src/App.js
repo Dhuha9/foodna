@@ -1,9 +1,9 @@
-import CtaButton from './components/CtaButton';
+import HeroComponent from './components/HeroComponent';
 
 function App() {
   return (
-    <div>
-      <CtaButton />
+    <div >
+      <HeroComponent/>
     </div>
   );
 }
