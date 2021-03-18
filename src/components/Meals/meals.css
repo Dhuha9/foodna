@@ -1,0 +1,82 @@
+.available-meals{
+    width: 1440px;
+    height: 820px;
+    background-color: #03B664;
+}
+
+.meals-title{
+    color: aliceblue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.meals-quote{
+    color: aliceblue;
+    font-size:large;
+    padding-bottom: 50px;
+}
+
+.items{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    left: 0;
+
+}
+
+.card{
+    height: 436px;
+    width: 270px;
+    top: 247px;
+    top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.card-body{
+    position: relative;
+}
+
+.Button{
+    background-color: #E5E5E5;
+    height: 60px;
+    width: 100%;
+    border: 0;
+    border: none;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Button:hover {
+    color: #fff;
+    background-color: #FFB701;
+    border-color: #0062cc;
+}
+
+.card-img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-title{
+    position: absolute;
+
+}
+
+.card-text{
+    position: absolute;
+    bottom: 80px;
+    left: 18px;
+    color: gray;
+}
+
+.carousel-indicators{
+    display: none;
+}
+

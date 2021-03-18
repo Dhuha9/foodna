@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders apply now correctly 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="food"
+    class="card-img"
+  />
+  <div
+    class="card-body"
+  >
+    <h5
+      class="card-title"
+    />
+    <span
+      class="card-text"
+    />
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      type="button"
+    >
+      Get This Meal
+    </button>
+  </div>
+</div>
+`;

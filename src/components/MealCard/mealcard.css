@@ -1,0 +1,47 @@
+.card{
+    height: 436px;
+    width: 270px;
+    top: 247px;
+    left: 135px;
+}
+
+.card-body{
+    position: relative;
+}
+
+.Button{
+    background-color: #E5E5E5;
+    height: 60px;
+    width: 100%;
+    border: 0;
+    border: none;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Button:hover {
+    color: #fff;
+    background-color: #03B664;
+    border-color: #0062cc;
+}
+
+.card-img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-title{
+    position: absolute;
+
+}
+
+.card-text{
+    position: absolute;
+    bottom: 80px;
+    left: 18px;
+    color: gray;
+}
+

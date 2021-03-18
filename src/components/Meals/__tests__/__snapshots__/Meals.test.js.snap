@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders apply now correctly 1`] = `
+<div>
+  <div
+    className="available-meals"
+  >
+    <h1
+      className="meals-title"
+    >
+      Available Meals Right Now
+    </h1>
+    <p
+      className="meals-quote"
+    >
+      "If you don't try this app, you won't become the hero you were meant to be"
+    </p>
+    <div
+      className="carousel slide"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="active carousel-item"
+        >
+          <div
+            className="items"
+          >
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="tomato.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Canned Tomato Soup
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Family Market
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="donut.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Pastry Box
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Chocolate Bar
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="pantry.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Two days worth of pantry
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  7eleven
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="rice.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Rice bags
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Sprout Warehouse
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carousel-item"
+        >
+          <div
+            className="items"
+          >
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="tomato.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Canned Tomato Soup
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Family Market
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="donut.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Pastry Box
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Chocolate Bar
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="pantry.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Two days worth of pantry
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  7eleven
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <img
+                alt="food"
+                class="card-img"
+                src="rice.jpg"
+              />
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Rice bags
+                </h5>
+                <span
+                  class="card-text"
+                >
+                  Sprout Warehouse
+                </span>
+                <button
+                  className="Button btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  Get This Meal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-prev-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Previous
+        </span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-next-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;
