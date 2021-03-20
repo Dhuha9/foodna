@@ -1,6 +1,6 @@
 import React from 'react'
 import './NarrowCta.css';
-import CtaButton from './CtaButton';
+import CtaButton from '../CtaButton/CtaButton';
 
 var buttonStyle = {
     width: '240px',
