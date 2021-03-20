@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sponsors snapshot 1`] = `
+<div>
+  <h1
+    className="mb-4"
+  >
+    Sponsors
+  </h1>
+  <p
+    className="mb-4"
+  >
+    This project is generously sponsored by:
+  </p>
+  <div
+    className="container"
+  >
+    <div
+      className="justify-content-center row no-gutters"
+    >
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="sponsor"
+            className="sponsor-image"
+            src="ReCodedLogos.png"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="sponsor"
+            className="sponsor-image"
+            src="ReCodedLogos.png"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="sponsor"
+            className="sponsor-image"
+            src="ReCodedLogos.png"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="sponsor"
+            className="sponsor-image"
+            src="ReCodedLogos.png"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="sponsor"
+            className="sponsor-image"
+            src="ReCodedLogos.png"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
