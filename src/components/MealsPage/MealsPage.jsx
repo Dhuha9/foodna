@@ -1,4 +1,5 @@
-/* eslint-disable prettier/prettier */
+/* eslint react/prop-types: 0 */
+/* eslint-disable-next-line react/jsx-no-bind */
 import React, { Component } from 'react';
 import MealCard from '../MealCard/MealCard';
 import MealData from '../../data.json'
@@ -15,12 +16,13 @@ export default class AvailableMealsPage extends Component {
         </p>
         <div className="meals-grid">
             {MealData.map((meal)=>{
-                // eslint-disable-next-line react/jsx-key
-                return <MealCard 
+                return <div key={meal.id}>
+                  <MealCard 
                 img={meal.img}
                 title={meal.title}
                 organization={meal.organization}
                 />
+                  </div>
             })}
         </div>
       </div>

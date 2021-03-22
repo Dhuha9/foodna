@@ -1,5 +1,5 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
+/* eslint react/prop-types: 0 */
+// eslint-disable-next-line react/jsx-no-bind
 import React, { Component } from 'react';
 import '../../meals.css'
 import { Button } from 'react-bootstrap';

@@ -143,3 +143,31 @@
     justify-content: center;
     
 }
+
+
+@media only screen and (max-width: 1200px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
+
+@media only screen and (max-width: 910px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
+
+@media only screen and (max-width: 590px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
