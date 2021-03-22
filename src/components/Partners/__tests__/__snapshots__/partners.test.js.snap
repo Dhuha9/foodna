@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders apply now correctly 1`] = `
+<div
+  className="partners-section"
+>
+  <p
+    className="partners-title"
+  >
+    Who Works With Us?
+  </p>
+  <div
+    className="partners-grid"
+  >
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+    <div>
+      <img
+        alt="sponsor"
+        className="partner-image"
+        src="sponsor.png"
+      />
+    </div>
+  </div>
+</div>
+`;
