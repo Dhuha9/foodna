@@ -1,0 +1,173 @@
+.available-meals{
+    width: 1440px;
+    height: 820px;
+    background-color: #03B664;
+}
+
+.meals-title{
+    color: aliceblue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.meals-quote{
+    color: aliceblue;
+    font-size:large;
+    padding-bottom: 50px;
+}
+
+.card{
+    height: 436px;
+    width: 270px;
+    top: 247px;
+    top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    border: none;
+    overflow: hidden;
+}
+
+.card-body{
+    position: relative;
+    width: 270px;
+    height: 166px;
+}
+
+.Button{
+    background-color: #E5E5E5;
+    height: 60px;
+    width: 100%;
+    border: 0;
+    border: none;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Button:hover {
+    color: #fff;
+    background-color: #FFB701;
+    border-color: #0062cc;
+}
+
+.image-section{
+    overflow: hidden;
+}
+
+.card-img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+   }
+
+   .card img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+   }
+
+   .card:hover img {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+   }
+
+.card-title{
+    position: absolute;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 80px;
+    left: 18px;
+    color: gray;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.carousel-item{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    left: 0;
+}
+
+.sc-bdfBwQ {
+    background-color: #FFB701;
+}
+
+
+.iLquPE {
+    background-color: #FFB701;
+}
+
+
+.rec-arrow {
+    background-color: #FFB701;
+    color: #FFB701;
+}
+
+
+.rec-arrow-left {
+    background-color: #FFB701
+    ;
+}
+
+.available-meals-page {
+    background-color: #F2F2F2;
+    height: auto;
+    width: 1440;
+}
+
+.available-meals-title {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.available-meals-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight:550;
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin-top: 80px;
+    justify-content: center;
+    
+}
+
+
+@media only screen and (max-width: 1200px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
+
+@media only screen and (max-width: 910px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
+
+@media only screen and (max-width: 590px){
+    .meals-grid {
+        display: grid;
+        grid-template-columns: 300px;
+        margin-top: 80px;
+        justify-content: center;  
+    }
+}
