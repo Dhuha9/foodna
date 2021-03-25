@@ -3,12 +3,12 @@
 exports[`Sponsors snapshot 1`] = `
 <div>
   <h1
-    className="mb-4"
+    className="heading mb-4"
   >
     Sponsors
   </h1>
   <p
-    className="mb-4"
+    className="subheading mb-4"
   >
     This project is generously sponsored by:
   </p>
@@ -25,9 +25,9 @@ exports[`Sponsors snapshot 1`] = `
           href="https://www.re-coded.com/"
         >
           <img
-            alt="sponsor"
+            alt="Re:coded"
             className="sponsor-image"
-            src="ReCodedLogos.png"
+            src="ReCodedLogo.jpg"
           />
         </a>
       </div>
@@ -38,9 +38,9 @@ exports[`Sponsors snapshot 1`] = `
           href="https://www.re-coded.com/"
         >
           <img
-            alt="sponsor"
+            alt="Re:coded"
             className="sponsor-image"
-            src="ReCodedLogos.png"
+            src="ReCodedLogo.jpg"
           />
         </a>
       </div>
@@ -51,9 +51,9 @@ exports[`Sponsors snapshot 1`] = `
           href="https://www.re-coded.com/"
         >
           <img
-            alt="sponsor"
+            alt="Re:coded"
             className="sponsor-image"
-            src="ReCodedLogos.png"
+            src="ReCodedLogo.jpg"
           />
         </a>
       </div>
@@ -64,9 +64,9 @@ exports[`Sponsors snapshot 1`] = `
           href="https://www.re-coded.com/"
         >
           <img
-            alt="sponsor"
+            alt="Re:coded"
             className="sponsor-image"
-            src="ReCodedLogos.png"
+            src="ReCodedLogo.jpg"
           />
         </a>
       </div>
@@ -77,9 +77,9 @@ exports[`Sponsors snapshot 1`] = `
           href="https://www.re-coded.com/"
         >
           <img
-            alt="sponsor"
+            alt="Re:coded"
             className="sponsor-image"
-            src="ReCodedLogos.png"
+            src="ReCodedLogo.jpg"
           />
         </a>
       </div>
