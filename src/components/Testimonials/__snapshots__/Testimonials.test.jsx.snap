@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testimonials snapshot 1`] = `
+<div
+  className="w-50 m-auto"
+>
+  <div
+    className="carousel slide"
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <ol
+      className="carousel-indicators"
+    >
+      <li
+        className="active"
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+    </ol>
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="mt-3 active carousel-item"
+      >
+        <blockquote
+          className="p-4 blockquote"
+        >
+          <h4>
+            <q>
+              A well-known quote, contained in a blockquote element
+            </q>
+          </h4>
+        </blockquote>
+        <div
+          className="d-block m-auto w-25 h-25"
+        >
+          <img
+            alt="the person"
+            className="d-block m-auto w-50 h-50 testimonial-person"
+            src="TA.jpg"
+          />
+        </div>
+        <div
+          className="mt-3 mb-5"
+        >
+          <figcaption
+            className="blockquote-footer"
+          >
+            — 
+            Tabarek Ayad, Developer
+          </figcaption>
+        </div>
+      </div>
+      <div
+        className="mt-3 carousel-item"
+      >
+        <blockquote
+          className="p-4 blockquote"
+        >
+          <h4>
+            <q>
+              Another well-known quote, contained in a blockquote element
+            </q>
+          </h4>
+        </blockquote>
+        <div
+          className="d-block m-auto w-25 h-25"
+        >
+          <img
+            alt="the person"
+            className="d-block m-auto w-50 h-50 testimonial-person"
+            src="TA1.jpg"
+          />
+        </div>
+        <div
+          className="mt-3 mb-5"
+        >
+          <figcaption
+            className="blockquote-footer"
+          >
+            — 
+            TA, Developer
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <a
+      className="carousel-control-prev"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-prev-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+    <a
+      className="carousel-control-next"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-next-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </div>
+</div>
+`;
