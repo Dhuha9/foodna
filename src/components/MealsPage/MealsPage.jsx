@@ -2,8 +2,8 @@
 /* eslint-disable-next-line react/jsx-no-bind */
 import React, { Component } from 'react';
 import MealCard from '../MealCard/MealCard';
-//import MealData from '../../data.json'
-import firebase from '../../firebase'
+import firebase from '../../firebase';
+import {Link} from "react-router-dom"
 
 
 export default class MealsPage extends Component {
@@ -45,11 +45,13 @@ export default class MealsPage extends Component {
         <div className="meals-grid">
             {this.state.meals.map((meal)=>{
                 return <div key={meal.id}>
+                  <Link to={`/getMealForm/${meal.id}`}>
                   <MealCard 
                 img={meal.image}
                 title={meal.title}
                 organization={meal.organization}
                 />
+                  </Link>
                   </div>
             })}
         </div>
