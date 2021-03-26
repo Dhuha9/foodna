@@ -56,7 +56,7 @@ export default class ClaimMeal extends Component {
 
     event.preventDefault();
 
-    const MealOrder = this.state;
+    const MealOrder = {...this.state, mealId:"DUMMY ID JUST FOR TESTING"};
     firebase.firestore().collection('MealOrder').add(MealOrder);
     
 
