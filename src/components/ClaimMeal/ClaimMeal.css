@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.ClaimMeal{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.meal{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:40%
+}
+
+.image{
+    width: 400px;
+    box-shadow: 50px 50px #fff;
+    margin:50px
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+p.location{
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+p.quantity{
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color:#000;
+    margin-top: 30px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    width:400px;
+}
+
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+sup{
+    color: rgb(255, 0, 0)
+}
+
+.input{
+    background: #FFFFFF;
+    border: 1px solid #545D69;
+    box-sizing: border-box;
+    border-radius: 8px;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+    height: 44px;
+
+}
+
+input::after{
+    background:#fff;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.Submit{
+    margin-top:20px;
+    background: #03B664;
+    border-radius: 8px;
+    padding: 14px 18px;
+    border: none;
+    color: #fff
+
+}
+
+.Submit:hover{
+    background: #FFB701
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+    /* For Tablet screens */
+
+    .ClaimMeal{
+        display: block;
+    }
+
+    .meal{
+        width: 100%;
+        text-align: center;
+    }
+
+    .form{
+        width: 70%;
+        margin:auto;
+        
+    }
+
+    h4{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    /* For Mobile screens */
+    .image{
+        width: 200px;
+        box-shadow: 30px 30px #fff;
+    }
+}
