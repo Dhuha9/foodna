@@ -14,7 +14,7 @@ export default class MealCard extends Component {
         <div className="card-body">
           <h5 className="card-title">{this.props.title}</h5>
           <span className="card-text">{this.props.organization}</span>
-          <Button className="Button">Get This Meal</Button>
+          <button type="button" className="button">Get This Meal</button>
         </div>
       </div>
     );

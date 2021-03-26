@@ -22,8 +22,7 @@ exports[`renders apply now correctly 1`] = `
       className="card-text"
     />
     <button
-      className="Button btn btn-primary"
-      disabled={false}
+      className="button"
       type="button"
     >
       Get This Meal

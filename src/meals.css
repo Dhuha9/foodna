@@ -1,5 +1,4 @@
 .available-meals{
-    width: 1440px;
     height: 820px;
     background-color: #03B664;
 }
@@ -34,7 +33,7 @@
     height: 166px;
 }
 
-.Button{
+.button{
     background-color: #E5E5E5;
     height: 60px;
     width: 100%;
@@ -46,7 +45,7 @@
     left: 0;
 }
 
-.Button:hover {
+.button:hover {
     color: #fff;
     background-color: #FFB701;
     border-color: #0062cc;
@@ -98,15 +97,6 @@
     left: 0;
 }
 
-.sc-bdfBwQ {
-    background-color: #FFB701;
-}
-
-
-.iLquPE {
-    background-color: #FFB701;
-}
-
 
 .rec-arrow {
     background-color: #FFB701;
@@ -142,6 +132,25 @@
     margin-top: 80px;
     justify-content: center;
     
+}
+
+.meal-in-form{
+    background-color: #F2F2F2;
+    padding: 40px;
+    margin-left: 40%;
+    height: 100vh;
+}
+
+
+.meal-form-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 40px;
+}
+
+.text {
+    font-size: large;
 }
 
 
