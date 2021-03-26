@@ -56,10 +56,9 @@ export default class ClaimMeal extends Component {
 
     event.preventDefault();
 
-    const MealOrderRef = firebase.database().ref('MealOrder');
     const MealOrder = this.state;
-
-    MealOrderRef.push(MealOrder);
+    firebase.firestore().collection('MealOrder').add(MealOrder);
+    
 
     this.setState({
       name: '',
