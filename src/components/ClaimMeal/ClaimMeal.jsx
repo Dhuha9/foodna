@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './ClaimMeal.css'
 import firebase from '../../firebase'
 import Recaptcha from 'react-recaptcha';
+import PropTypes from 'prop-types';
 
 
 export default class ClaimMeal extends Component {
@@ -33,7 +34,7 @@ export default class ClaimMeal extends Component {
 
     const unsubscribe = firebase.firestore()
       .collection('meals')
-      .doc('kR7i0GCR3W8uSnQ0g32A')
+      .doc(this.props.match.params.id)
       .get()
       .then(snapshot => 
         this.setState({
@@ -89,7 +90,6 @@ export default class ClaimMeal extends Component {
       console.log(MealOrder)
       firebase.firestore().collection('MealOrder').add(MealOrder);
       
-  
       this.setState({
         name: '',
         email:'',
@@ -97,7 +97,12 @@ export default class ClaimMeal extends Component {
         organization: '',
       });
 
-        alert('Your order have been sent!');
+      firebase.firestore().collection("meals")
+      .doc(this.props.match.params.id).update({
+        'available':false
+      });
+
+      alert('Your order have been sent!');
 
       } else {
         alert('Please verify that you are a human!');
@@ -143,4 +148,12 @@ export default class ClaimMeal extends Component {
       </div>
   )
   }
+}
+
+ClaimMeal.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string.isRequired
+    })
+  })
 }
