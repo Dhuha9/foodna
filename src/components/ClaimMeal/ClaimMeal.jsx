@@ -1,29 +1,7 @@
-// /* eslint react/prop-types: 0 */
-// // eslint-disable-next-line react/jsx-no-bind
-// import React, { Component } from 'react';
-// import '../../meals.css'
-// import { Button } from 'react-bootstrap';
-
-// export default class MealCard extends Component {
-//   render() {
-//     return (
-//       <div className="card">
-//         <div className="image-section">
-//           <img src={this.props.img} className="card-img" alt="food" />
-//         </div>
-//         <div className="card-body">
-//           <h5 className="card-title">{this.props.title}</h5>
-//           <span className="card-text">{this.props.organization}</span>
-//           <Button className="Button">Get This Meal</Button>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
 import React, { Component } from 'react'
 import './ClaimMeal.css'
 import firebase from '../../firebase'
+import Recaptcha from 'react-recaptcha';
 
 
 export default class ClaimMeal extends Component {
@@ -35,37 +13,96 @@ export default class ClaimMeal extends Component {
       email:'',
       phone: '',
       organization: '',
+      isVerified: false,
+      mealInfo:{},
+      didMount:false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+    this.verifyCallback = this.verifyCallback.bind(this);
+  }
+
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({
+        didMount:true
+      })
+    }, 1000);
+
+    const unsubscribe = firebase.firestore()
+      .collection('meals')
+      .doc('kR7i0GCR3W8uSnQ0g32A')
+      .get()
+      .then(snapshot => 
+        this.setState({
+          mealInfo: snapshot.data()
+        })
+      )
+      return()=> unsubscribe();
+    
+    
+}
+
+  recaptchaLoaded() {
+    if(this.state.didMount){
+      console.log('capcha successfully loaded');
+    }
+    
+  }
+
+  verifyCallback(response) {
+    if(this.state.didMount){
+        if (response) {
+        this.setState({
+          isVerified: true
+        })
+        console.log('capcha successfully verified');
+      }
+    }
   }
 
   handleChange(event) {
+    
     const target = event.target;
     const value = target.value;
     const name = target.name;
 
-    this.setState({
-      [name]: value
-    });
+    if(this.state.didMount){
+        this.setState({
+        [name]: value
+      });
+    }
   }
 
   handleSubmit(event) {
     console.log(this.state)
-
     event.preventDefault();
 
-    const MealOrder = {...this.state, mealId:"DUMMY ID JUST FOR TESTING"};
-    firebase.firestore().collection('MealOrder').add(MealOrder);
-    
+    if(this.state.name==''|| this.state.email==''||this.state.phone=='' || this.state.organization=='')
+      alert('Please fill all the fields in the form')
+    else{
+      if (this.state.isVerified) {
 
-    this.setState({
-      name: '',
-      email:'',
-      phone: '',
-      organization: '',
-    });
+      const MealOrder = {...this.state};
+      console.log(MealOrder)
+      firebase.firestore().collection('MealOrder').add(MealOrder);
+      
+  
+      this.setState({
+        name: '',
+        email:'',
+        phone: '',
+        organization: '',
+      });
+
+        alert('Your order have been sent!');
+
+      } else {
+        alert('Please verify that you are a human!');
+      }
+    }
     
   }
 
@@ -73,11 +110,11 @@ export default class ClaimMeal extends Component {
     return (
       <div className="ClaimMeal">
           <div className="meal">
-              <img className="image" src="pizza.jpg" alt="" />
-              <h4>Chicken Fajita Dishes</h4>
-              <p className="location">Fried Chicken  Zayoona</p>
-              <p className="quantity">Quantity : 5 Dishes</p>
-              <p>Description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque, mollitia animi sit, commodi corrupti vel harum quod magnam cupiditate tempore illo saepe libero. Incidunt earum a doloribus minima eum.</p>
+              <img className="image" src={this.state.mealInfo.image} alt="" />
+              <h4>{this.state.mealInfo.title}</h4>
+              <p className="location">{this.state.mealInfo.organization}</p>
+              <p className="quantity">Quantity : {this.state.mealInfo.quantity}</p>
+              <p>Description : {this.state.mealInfo.description}</p>
               
           </div>
           <div className="form">
@@ -91,6 +128,15 @@ export default class ClaimMeal extends Component {
                   <input name="phone" type="text" value={this.state.phone} onChange={this.handleChange} className='input'/>
                   <label>Organization <sup>*</sup></label>
                   <input name="organization" type="text" value={this.state.organization} onChange={this.handleChange} className='input'/>
+                  {
+                    this.state.didMount? 
+                      <Recaptcha
+                        sitekey="6Lc1AJEaAAAAAHq9WLQosB7pq1gp4VK4s65-MnnL"
+                        render="explicit"
+                        onloadCallback={this.recaptchaLoaded}
+                        verifyCallback={this.verifyCallback}
+                      />: 'ReCAPCHA not working'
+                  }
                   <input type="submit" value="Get This Meal" className="Submit" />
                 </form>
             </div>
