@@ -6,10 +6,11 @@ import Login from '../OAuth/Login';
 import Logout from '../OAuth/Logout';
 
 const navItems = [
-  { title: 'About', path: '/about' },
   { title: 'Recieve Food', path: '/meals' },
   { title: 'Donate Food', path: '/donate' },
+  { title: 'About', path: '/about' },
 ];
+
 export default function Header() {
   const [user, setuser] = useState(
     JSON.parse(localStorage.getItem('currentUser'))
@@ -22,7 +23,7 @@ export default function Header() {
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand as={Link} to="/">
+      <Navbar.Brand as={Link} to="/" className="mx-2">
         <img alt="" src={foodnaLogo} width="150" height="50" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,12 +33,12 @@ export default function Header() {
       >
         <Nav>
           {navItems.map((navItme, indx) => (
-            <Nav.Link as={Link} to={navItme.path} key={indx}>
+            <Nav.Link as={Link} to={navItme.path} key={indx} className="ml-4">
               {navItme.title}
             </Nav.Link>
           ))}
         </Nav>
-        <Nav>
+        <Nav className="mx-4">
           {user ? (
             <Logout handleUser={handleUser} />
           ) : (
