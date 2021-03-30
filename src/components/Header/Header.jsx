@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import foodnaLogo from '../../foodnaLogo.png';
 import { Link } from 'react-router-dom';
+import Login from '../OAuth/Login';
+import Logout from '../OAuth/Logout';
 
 const navItems = [
   { title: 'About', path: '/about' },
@@ -9,6 +11,15 @@ const navItems = [
   { title: 'Donate Food', path: '/donate' },
 ];
 export default function Header() {
+  const [user, setuser] = useState(
+    JSON.parse(localStorage.getItem('currentUser'))
+  );
+
+  const handleUser = () => {
+    const newUserState = JSON.parse(localStorage.getItem('currentUser'));
+    setuser(newUserState);
+  };
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Navbar.Brand as={Link} to="/">
@@ -25,6 +36,13 @@ export default function Header() {
               {navItme.title}
             </Nav.Link>
           ))}
+        </Nav>
+        <Nav>
+          {user ? (
+            <Logout handleUser={handleUser} />
+          ) : (
+            <Login handleUser={handleUser} />
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
