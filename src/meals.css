@@ -7,12 +7,14 @@
     color: aliceblue;
     padding-top: 40px;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 .meals-quote{
     color: aliceblue;
     font-size:large;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .card{
@@ -98,16 +100,6 @@
 }
 
 
-.rec-arrow {
-    background-color: #FFB701;
-    color: #FFB701;
-}
-
-
-.rec-arrow-left {
-    background-color: #FFB701
-    ;
-}
 
 .available-meals-page {
     background-color: #F2F2F2;
@@ -153,6 +145,9 @@
     font-size: large;
 }
 
+.display {
+    display: none;
+}
 
 @media only screen and (max-width: 1200px){
     .meals-grid {
