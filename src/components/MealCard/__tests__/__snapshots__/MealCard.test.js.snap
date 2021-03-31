@@ -27,6 +27,7 @@ exports[`renders apply now correctly 1`] = `
     >
       Get This Meal
     </button>
+          
   </div>
 </div>
 `;
