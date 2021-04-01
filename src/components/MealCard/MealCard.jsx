@@ -16,8 +16,7 @@ export default function MealCard({img, title, organization}) {
   );
 }
 MealCard.propTypes = {
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  organization: PropTypes.string.isRequired,
-  available: PropTypes.bool.isRequired
+  img: PropTypes.any,
+  title: PropTypes.any,
+  organization: PropTypes.any,
 };
