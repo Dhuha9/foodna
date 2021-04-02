@@ -3,7 +3,9 @@ name: test pull request
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+          - main
+          - dev
 
   workflow_dispatch:
 
