@@ -1,7 +1,7 @@
-/* eslint react/prop-types: 0 */
-/* eslint-disable-next-line react/jsx-no-bind */
 import React, { Component } from 'react';
 import MealCard from '../MealCard/MealCard';
+import '../../meals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import firebase from '../../firebase';
 import {Link} from "react-router-dom"
 
@@ -44,8 +44,9 @@ export default class MealsPage extends Component {
         </p>
         <div className="meals-grid">
             {this.state.meals.map((meal)=>{
+              if (meal.available)
                 return <div key={meal.id}>
-                  <Link to={`/getMealForm/${meal.id}`}>
+                  <Link to={`/ClaimMeal/${meal.id}`}>
                   <MealCard 
                 img={meal.image}
                 title={meal.title}

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import * as React from "react";
 import * as renderer from "react-test-renderer";
 import MealsPage from '../MealsPage';
