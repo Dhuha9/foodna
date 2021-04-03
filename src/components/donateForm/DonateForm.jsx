@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import firebase from '../../firebase';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './DonationForm.scss';
 import M from '../../dist/img/Media.png';
+import 'firebase/storage';
 
 function DonateForm() {
   const [value, setValue] = useState({
@@ -13,7 +15,6 @@ function DonateForm() {
     address: '',
     photo: null,
   });
-  console.log(value);
   const handleChange = (e) => {
     if (e.target.name === 'photo') {
       setValue({ ...value, photo: e.target.files[0] });
@@ -21,14 +22,22 @@ function DonateForm() {
       setValue({ ...value, [e.target.name]: e.target.value });
     }
   };
-  // Create a root reference
-  //var storageRef = firebase.storage().ref();
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    console.log(value);
 
-  // Create a reference to 'mountains.jpg'
-  // var mountainsRef = storageRef.child('mountains.jpg');
-  // mountainsRef.put(file).then((snapshot) => {
-  //  console.log('Uploaded a blob or file!');
-  // });
+    const doc = firebase.firestore().collection('DonateForm').doc();
+    const id = doc.id;
+
+    const storageRef = firebase.storage().ref(`DonateForm/${id}`);
+    const photoRef = storageRef.child(value.photo.name);
+    const photo = await photoRef.put(value.photo);
+
+    const downlaodUrl = await photo.ref.getDownloadURL();
+
+    doc.set({ ...value, photo: downlaodUrl });
+  };
+
   return (
     <Container>
       <Row>
@@ -42,7 +51,7 @@ function DonateForm() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
           </p>
 
-          <Form>
+          <Form onSubmit={onSubmit}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Full Name</Form.Label>
               <Form.Control
