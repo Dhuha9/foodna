@@ -1,10 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CtaButton from './CtaButton';
 
-it ("renders when there is no CtaButton", () => {
+import NarrowCta from './NarrowCta';
+
+it ("renders when there is no NarrowCta", () => {
     const tree = renderer.create(
-        <CtaButton />
+        <NarrowCta />
     ).toJSON();
     expect(tree).toMatchSnapshot();
 });

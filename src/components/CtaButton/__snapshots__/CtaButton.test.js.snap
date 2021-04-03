@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders when there are is no CtaButton 1`] = `
+exports[`renders when there is no CtaButton 1`] = `
 <div>
   <button
     className="btn btn-default"
