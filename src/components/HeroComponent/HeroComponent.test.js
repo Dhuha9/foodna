@@ -1,10 +1,12 @@
+  
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CtaButton from './CtaButton';
 
-it ("renders when there is no CtaButton", () => {
+import HeroComponent from './HeroComponent';
+
+it ("renders when there are is no HeroComponent", () => {
     const tree = renderer.create(
-        <CtaButton />
+        <HeroComponent />
     ).toJSON();
     expect(tree).toMatchSnapshot();
 });

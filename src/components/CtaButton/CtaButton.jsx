@@ -1,6 +1,6 @@
 import React from 'react'
 
-var buttonStyle = {
+const buttonStyle = {
     width: '240px',
     height: '60px',
     left: 'calc(50% - 240px/2 - 1px)',
