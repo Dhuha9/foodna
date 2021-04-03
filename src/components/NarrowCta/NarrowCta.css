@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-.container{
+.NarrowCtaStyle .container{
   background-color: #F2F2F2;
   color: 000;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 0;
+  min-height: 240px;
   font-family: 'Roboto', sans-serif;
-  height: 240px;
   flex-wrap: wrap;
 }
 
-.content{
+.NarrowCtaStyle .content{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -26,7 +26,7 @@
   font-size: 32px;
 }
 
-.content h4{
+.NarrowCtaStyle .content h4{
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 32px;
@@ -34,10 +34,29 @@
     margin-bottom: 0px;
 }
 
-.buttons{
+.NarrowCtaStyle .buttons{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
 }
 
+.NarrowCtaStyle .buttons button{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile screens */
+  .NarrowCtaStyle .content{
+    margin-bottom:40px;
+  }
+  .NarrowCtaStyle .buttons {
+    display: block;
+    padding-top: 10px;
+  }
+  .NarrowCtaStyle .buttons button{
+    margin-bottom:20px;
+  }
+
+
+}

@@ -27,16 +27,19 @@ const theme = {
 
 export default function InfoComponent({color}) {
     return (
-        <div className={theme[color].class}>
-            <div className="media" >
-                <img className="info-img" src={theme[color].img} alt=""/>
-            </div>
-            <div className="content">
-                <h2>More info about us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div className='InfoComponentStyle'>
+            <div className={theme[color].class}>
+                <div className="media" >
+                    <img className="info-img" src={theme[color].img} alt=""/>
+                </div>
+                <div className="content">
+                    <h2>More info about us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
         </div>
+        
     )
 }
 

@@ -11,24 +11,26 @@ var buttonStyle = {
     borderColor: '#000',
     fontSize: '18px',
     fontSamily: 'roboto',
-    marginLeft: '20px',
     backgroundColor: '#F2F2F2'
 }
 
 export default function NarrowCta() {
     return (
-        <div className="container">
-            <div className="content">
-                <h4>Want to help?</h4>
-                <div>Donate now or contact us</div>
-            </div>
-            <div className="buttons">
-                <CtaButton />
-                <button
-                style={buttonStyle}>
-                    Contact Us
-            </button>
-            </div>
+        <div className="NarrowCtaStyle">
+            <div className="container">
+                <div className="content">
+                    <h4>Want to help?</h4>
+                    <div>Donate now or contact us</div>
+                </div>
+                <div className="buttons">
+                    <CtaButton />
+                    <button
+                    style={buttonStyle}>
+                        Contact Us
+                </button>
+                </div>
+            </div>  
         </div>
+        
     )
 }
