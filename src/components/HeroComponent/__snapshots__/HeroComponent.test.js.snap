@@ -2,43 +2,47 @@
 
 exports[`renders when there are is no HeroComponent 1`] = `
 <div
-  className="bg"
+  className="HeroComponentStyle"
 >
-  <h1>
-    You have Extra food ?
-  </h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-  <div>
-    <button
-      className="btn btn-default"
-      style={
-        Object {
-          "backgroundColor": "#FFB701",
-          "border": "none",
-          "borderRadius": "5px",
-          "color": "#000",
-          "fontSamily": "roboto",
-          "fontSize": "18px",
-          "height": "60px",
-          "left": "calc(50% - 240px/2 - 1px)",
-          "top": "256px",
-          "width": "240px",
-        }
-      }
-    >
-      Donate Now
-    </button>
-  </div>
   <div
-    className="side-crop"
+    className="bg"
   >
-    <img
-      alt=""
-      className="hero-pic"
-      src="img/apple.jpg"
-    />
+    <h1>
+      You have Extra food ?
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <div>
+      <button
+        className="btn btn-default"
+        style={
+          Object {
+            "backgroundColor": "#FFB701",
+            "border": "none",
+            "borderRadius": "5px",
+            "color": "#000",
+            "fontSamily": "roboto",
+            "fontSize": "18px",
+            "height": "60px",
+            "left": "calc(50% - 240px/2 - 1px)",
+            "top": "256px",
+            "width": "240px",
+          }
+        }
+      >
+        Donate Now
+      </button>
+    </div>
+    <div
+      className="side-crop"
+    >
+      <img
+        alt=""
+        className="hero-pic"
+        src="img/apple.jpg"
+      />
+    </div>
   </div>
 </div>
 `;

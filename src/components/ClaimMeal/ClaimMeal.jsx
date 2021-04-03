@@ -123,7 +123,7 @@ export default class ClaimMeal extends Component {
               
           </div>
           <div className="form">
-              <h4 style ={{marginBottom:30}}>Get This Meal</h4>
+              <h4 className="ClaimMealStyle" style ={{marginBottom:30}}>Get This Meal</h4>
                 <form onSubmit={this.handleSubmit} className="formStyle">
                   <label>Name <sup>*</sup></label>
                   <input name="name" type="text" value={this.state.name} onChange={this.handleChange} className='input'/>
