@@ -44,9 +44,14 @@ export default class MealsPage extends Component {
         </p>
         <div className="meals-grid">
             {this.state.meals.map((meal)=>{
+<<<<<<< HEAD
               if (meal.available)
                 return <div key={meal.id}>
                   <Link to={`/ClaimMeal/${meal.id}`}>
+=======
+                return <div key={meal.id}>
+                  <Link to={`/getMealForm/${meal.id}`}>
+>>>>>>> 38caaabaf10c075c0b52194dfddfeba0ecd8eff8
                   <MealCard 
                 img={meal.image}
                 title={meal.title}

@@ -11,7 +11,10 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
+<<<<<<< HEAD
     "react-recaptcha": "^2.3.10",
+=======
+>>>>>>> 38caaabaf10c075c0b52194dfddfeba0ecd8eff8
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
