@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-// import firebase from '../../firebase';
+import firebase from '../../firebase.js';
 import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
@@ -44,7 +44,7 @@ export default function ContactForm() {
           console.log(error.text);
         }
       );
-    // firebase.firestore().collection('Contact').add(contact);
+    firebase.firestore().collection('Contact').add(templateParams);
   };
 
   return (
