@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.NarrowCtaStyle .container{
+  background-color: #F2F2F2;
+  color: 000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  min-height: 240px;
+  font-family: 'Roboto', sans-serif;
+  flex-wrap: wrap;
+}
+
+.NarrowCtaStyle .content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color:#03B664;
+  font-family: 'Roboto';
+  font-size: 32px;
+}
+
+.NarrowCtaStyle .content h4{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.NarrowCtaStyle .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.NarrowCtaStyle .buttons button{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile screens */
+  .NarrowCtaStyle .content{
+    margin-bottom:40px;
+  }
+  .NarrowCtaStyle .buttons {
+    display: block;
+    padding-top: 10px;
+  }
+  .NarrowCtaStyle .buttons button{
+    margin-bottom:20px;
+  }
+
+
+}
