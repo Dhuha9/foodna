@@ -9,9 +9,9 @@ const imgMap = { recodedLogo: recodedLogo };
 
 function Sponsors() {
   return (
-    <div>
-      <h1 className="heading mb-4">Sponsors</h1>
-      <p className="subheading mb-4">
+    <>
+      <h1 className="heading text-center mb-4">Sponsors</h1>
+      <p className="subheading  text-center mb-4">
         This project is generously sponsored by:
       </p>
       <Container>
@@ -25,7 +25,7 @@ function Sponsors() {
           ))}
         </Row>
       </Container>
-    </div>
+    </>
   );
 }
 
