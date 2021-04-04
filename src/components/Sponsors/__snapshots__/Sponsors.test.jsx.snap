@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sponsors snapshot 1`] = `
-<div>
+Array [
   <h1
-    className="heading mb-4"
+    className="heading text-center mb-4"
   >
     Sponsors
-  </h1>
+  </h1>,
   <p
-    className="subheading mb-4"
+    className="subheading  text-center mb-4"
   >
     This project is generously sponsored by:
-  </p>
+  </p>,
   <div
     className="container"
   >
@@ -84,6 +84,6 @@ exports[`Sponsors snapshot 1`] = `
         </a>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
