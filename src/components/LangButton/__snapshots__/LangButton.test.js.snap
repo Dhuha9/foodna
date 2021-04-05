@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders when there is no LangButton 1`] = `
+<div>
+  <form
+    className=""
+  >
+    <div
+      className="form-group"
+    >
+      <select
+        className="form-control form-control-sm"
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "90px",
+          }
+        }
+        value=""
+      >
+        <option
+          value="en"
+        >
+          English
+        </option>
+        <option
+          value="ar"
+        >
+          Arabic
+        </option>
+      </select>
+    </div>
+  </form>
+</div>
+`;

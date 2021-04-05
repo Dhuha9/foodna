@@ -1,0 +1,14 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "description": {
+      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+      "part2": "Switch language between english and arabic using button above."
+    },
+    "CtaButton":{
+      "title": "Donate Now"
+    },
+    "HeroComponent":{
+      "headline": "You have Extra food ?",
+      "paragraph": "Foodna is a the bridge between you and a hungry unfortunate family out there that does have a dinner to eat today. Help them and change thier life."
+    }
+  }
