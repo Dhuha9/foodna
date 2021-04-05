@@ -7,18 +7,18 @@ export default function Testimonial({ text, personImage, name, profession }) {
     <>
       <blockquote className="p-4 blockquote">
         <h4>
-          <q>{text}</q>
+          <q className="font-weight-bold text-center">{text}</q>
         </h4>
       </blockquote>
-      <div className="d-block m-auto w-25 h-25">
+      <div className="d-block m-auto">
         <img
-          className="d-block m-auto w-50 h-50 testimonial-person"
+          className="d-block m-auto testimonial-person"
           src={personImage}
           alt="the person"
         />
       </div>
       <div className="mt-3 mb-5">
-        <figcaption className="blockquote-footer">
+        <figcaption className="text-center blockquote-footer">
           &mdash; {name + ', ' + profession}
         </figcaption>
       </div>
