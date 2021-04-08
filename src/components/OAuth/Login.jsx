@@ -11,17 +11,17 @@ const clientId =
 function Login({ handleUser }) {
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
-    alert(`Logged in successfully welcome ${res.profileObj.name} 😍.`);
+    // alert(`Logged in successfully welcome ${res.profileObj.name} 😍.`);
     localStorage.setItem('currentUser', JSON.stringify(res.profileObj));
     // var userInfo = JSON.parse(localStorage.getItem('res.profileObj')); <-- This line can be used to get the user's info from local storage
-
     refreshTokenSetup(res);
     handleUser();
   };
 
-  const onFailure = (res) => {
-    console.log('Login failed: res:', res);
-    alert(`Failed to login. 😢`);
+  const onFailure = () => {
+    // console.log('Login failed: res:', res);
+    // alert(`Failed to login. 😢`);
+    handleUser();
   };
 
   return (

@@ -4,6 +4,7 @@ import foodnaLogo from '../../foodnaLogo.png';
 import { Link } from 'react-router-dom';
 import Login from '../OAuth/Login';
 import Logout from '../OAuth/Logout';
+import PropTypes from 'prop-types';
 
 const navItems = [
   { title: 'Recieve Food', path: '/meals' },
@@ -11,14 +12,15 @@ const navItems = [
   { title: 'About', path: '/about' },
 ];
 
-export default function Header() {
-  const [user, setuser] = useState(
-    JSON.parse(localStorage.getItem('currentUser'))
-  );
+export default function Header({ handleUserChange, user2 }) {
+  const getCurrentUser = () => JSON.parse(localStorage.getItem('currentUser'));
+
+  const [user, setuser] = useState(getCurrentUser());
 
   const handleUser = () => {
-    const newUserState = JSON.parse(localStorage.getItem('currentUser'));
-    setuser(newUserState);
+    console.log('in nav');
+    handleUserChange();
+    setuser(getCurrentUser());
   };
 
   return (
@@ -39,7 +41,7 @@ export default function Header() {
           ))}
         </Nav>
         <Nav className="mx-4">
-          {user ? (
+          {user || user2 ? (
             <Logout handleUser={handleUser} />
           ) : (
             <Login handleUser={handleUser} />
@@ -49,3 +51,7 @@ export default function Header() {
     </Navbar>
   );
 }
+Header.propTypes = {
+  handleUserChange: PropTypes.func.isRequired,
+  user2: PropTypes.object.isRequired,
+};
