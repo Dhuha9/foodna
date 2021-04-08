@@ -1,27 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { GoogleLogin } from 'react-google-login';
 // refresh token
 import { refreshTokenSetup } from '../../utils/refreshToken.js';
-import PropTypes from 'prop-types';
 import './GoogleButton.scss';
+import { UserContext } from '../../App';
 
 const clientId =
   '161545215382-ens5ss0r0novf8hdq5dc8scabpc4v4j0.apps.googleusercontent.com';
 
-function Login({ handleUser }) {
+function Login() {
+  const userContext = useContext(UserContext);
+
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
     // alert(`Logged in successfully welcome ${res.profileObj.name} 😍.`);
     localStorage.setItem('currentUser', JSON.stringify(res.profileObj));
     // var userInfo = JSON.parse(localStorage.getItem('res.profileObj')); <-- This line can be used to get the user's info from local storage
     refreshTokenSetup(res);
-    handleUser();
+    userContext.refresh(JSON.parse(localStorage.getItem('currentUser')));
   };
 
   const onFailure = () => {
-    // console.log('Login failed: res:', res);
     // alert(`Failed to login. 😢`);
-    handleUser();
+    userContext.refresh(JSON.parse(localStorage.getItem('currentUser')));
   };
 
   return (
@@ -39,6 +40,3 @@ function Login({ handleUser }) {
 }
 
 export default Login;
-Login.propTypes = {
-  handleUser: PropTypes.func.isRequired,
-};

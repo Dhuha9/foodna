@@ -1,25 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { GoogleLogout } from 'react-google-login';
-import PropTypes from 'prop-types';
 import './GoogleButton.scss';
 import { createBrowserHistory } from 'history';
 import { useHistory } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const clientId =
   '161545215382-ens5ss0r0novf8hdq5dc8scabpc4v4j0.apps.googleusercontent.com';
 
-function Logout({ handleUser }) {
+function Logout() {
   let history = useHistory();
+  const userContext = useContext(UserContext);
 
   const onSuccess = () => {
     const currentHistory = createBrowserHistory();
     const currentPath = currentHistory.location.pathname;
-    if (currentPath == '/donate') {
+    if (currentPath == '/donate' || currentPath == '/recieve/:id') {
       history.goBack();
     }
     localStorage.removeItem('currentUser');
-    handleUser();
-    console.log('Logout made successfully');
+    userContext.refresh(JSON.parse(localStorage.getItem('currentUser')));
     alert('Logout made successfully ✌');
   };
 
@@ -35,6 +35,3 @@ function Logout({ handleUser }) {
 }
 
 export default Logout;
-Logout.propTypes = {
-  handleUser: PropTypes.func.isRequired,
-};

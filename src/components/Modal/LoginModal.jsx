@@ -1,33 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 // import { Redirect } from 'react-router-dom';
 import Login from '../OAuth/Login';
 import { useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import { UserContext } from '../../App';
 
-export default function LoginModal({ handleUserChange }) {
+export default function LoginModal() {
   const [show, setShow] = useState(true);
   let history = useHistory();
+  const userContext = useContext(UserContext);
 
-  const handleUser = () => {
-    const newUserState = JSON.parse(localStorage.getItem('currentUser'));
-
-    handleClose(newUserState);
-  };
-
-  const handleClose = (newUserState) => {
-    if (!newUserState) {
+  const handleClose = () => {
+    if (!userContext.user) {
       history.goBack();
     }
-
     setShow(false);
-    handleUserChange();
   };
 
   return (
     <>
-      {/* {!show && !user && <Redirect to="/" />} */}
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>You Should Sign in First</Modal.Title>
@@ -37,12 +29,9 @@ export default function LoginModal({ handleUserChange }) {
           <Button variant="secondary" onClick={handleClose}>
             Back
           </Button>
-          <Login handleUser={handleUser} />
+          <Login />
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-LoginModal.propTypes = {
-  handleUserChange: PropTypes.func.isRequired,
-};

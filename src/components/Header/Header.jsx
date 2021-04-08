@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import foodnaLogo from '../../foodnaLogo.png';
 import { Link } from 'react-router-dom';
 import Login from '../OAuth/Login';
 import Logout from '../OAuth/Logout';
-import PropTypes from 'prop-types';
+import { UserContext } from '../../App';
 
 const navItems = [
   { title: 'Recieve Food', path: '/meals' },
@@ -12,16 +12,8 @@ const navItems = [
   { title: 'About', path: '/about' },
 ];
 
-export default function Header({ handleUserChange, user2 }) {
-  const getCurrentUser = () => JSON.parse(localStorage.getItem('currentUser'));
-
-  const [user, setuser] = useState(getCurrentUser());
-
-  const handleUser = () => {
-    console.log('in nav');
-    handleUserChange();
-    setuser(getCurrentUser());
-  };
+export default function Header() {
+  const userrefresh = useContext(UserContext);
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -40,18 +32,8 @@ export default function Header({ handleUserChange, user2 }) {
             </Nav.Link>
           ))}
         </Nav>
-        <Nav className="mx-4">
-          {user || user2 ? (
-            <Logout handleUser={handleUser} />
-          ) : (
-            <Login handleUser={handleUser} />
-          )}
-        </Nav>
+        <Nav className="mx-4">{userrefresh.user ? <Logout /> : <Login />}</Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 }
-Header.propTypes = {
-  handleUserChange: PropTypes.func.isRequired,
-  user2: PropTypes.object.isRequired,
-};
