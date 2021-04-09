@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "text": "A well-known quote, contained in a blockquote element",
+    "personImage": "TA",
+    "name": "Tabarek Ayad",
+    "profession": "Developer"
+  },
+  {
+    "id": 1,
+    "text": "Another well-known quote, contained in a blockquote element",
+    "personImage": "TA1",
+    "name": "TA",
+    "profession": "Developer"
+  }
+]
