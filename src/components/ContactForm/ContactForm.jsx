@@ -48,10 +48,17 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
-      <Form onSubmit={handleSubmit}>
+    <div className="w-50 mx-auto my-5 text-left">
+      <h4 className="font-weight-bold">Contact Us</h4>
+      <div className="my-4">
+        Please leave your feedback and concernse and we will get back to you
+        soon
+      </div>
+      <Form onSubmit={handleSubmit} className="">
         <Form.Group controlId="formGroupPassword">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>
+            Name<span className="text-danger"> *</span>
+          </Form.Label>
           <Form.Control
             name="name"
             type="text"
@@ -60,7 +67,9 @@ export default function ContactForm() {
           />
         </Form.Group>
         <Form.Group controlId="formGroupPassword">
-          <Form.Label>Subject</Form.Label>
+          <Form.Label>
+            Subject<span className="text-danger"> *</span>
+          </Form.Label>
           <Form.Control
             name="subject"
             type="text"
@@ -69,7 +78,9 @@ export default function ContactForm() {
           />
         </Form.Group>
         <Form.Group controlId="formGroupEmail">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>
+            Email<span className="text-danger"> *</span>
+          </Form.Label>
           <Form.Control
             name="email"
             type="email"
@@ -79,7 +90,9 @@ export default function ContactForm() {
         </Form.Group>
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message</Form.Label>
+          <Form.Label>
+            Message<span className="text-danger"> *</span>
+          </Form.Label>
           <Form.Control
             name="message"
             as="textarea"
@@ -88,7 +101,11 @@ export default function ContactForm() {
             onChange={handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button
+          variant="primary"
+          type="submit"
+          style={{ backgroundColor: '#03B664' }}
+        >
           Send
         </Button>
       </Form>
