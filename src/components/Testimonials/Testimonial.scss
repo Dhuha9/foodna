@@ -1,0 +1,29 @@
+.testimonial-person {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+q {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: 0em;
+}
+
+.blockquote-footer {
+  color: #03b664;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+@media only screen and (max-width: 576px) {
+  q {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
