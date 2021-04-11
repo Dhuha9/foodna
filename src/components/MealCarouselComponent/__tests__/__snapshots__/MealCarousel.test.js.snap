@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders apply now correctly 1`] = `
+<div>
+  <div
+    className="available-meals"
+  >
+    <h1
+      className="meals-title"
+    >
+      Available Meals Right Now
+    </h1>
+    <p
+      className="meals-quote"
+    >
+      If you dont try this app, you wont become the hero you were meant to be
+    </p>
+    <div
+      className="sc-jRQAMF gNESUr rec rec-carousel-wrapper "
+      style={Object {}}
+    >
+      <div
+        className="sc-eCImvq ixXTzo rec rec-carousel"
+        size={
+          Object {
+            "height": 0,
+          }
+        }
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      >
+        <button
+          className="sc-bdvvaa hSiCVM rec rec-arrow rec rec-arrow-left"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❮
+        </button>
+        <div
+          className="sc-dkPtyc imakzv rec rec-slider-container"
+        >
+          <div
+            className="sc-hKwCoD eNbzjJ rec rec-slider"
+            style={
+              Object {
+                "left": "0px",
+                "right": "auto",
+                "top": "auto",
+                "transition": "all 500ms ease",
+              }
+            }
+          >
+            <div
+              className="rec rec-swipable"
+              onMouseDown={[Function]}
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            />
+          </div>
+        </div>
+        <button
+          className="sc-bdvvaa hSiCVM rec rec-arrow rec rec-arrow-right"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❯
+        </button>
+      </div>
+      <div
+        className="sc-iCfLBT kGrYtS rec rec-pagination"
+      >
+        <button
+          className="sc-gKckTs cetQhm rec rec-dot rec rec-dot_active"
+          onClick={[Function]}
+          tabIndex={-1}
+          type="button"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
