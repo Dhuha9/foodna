@@ -1,12 +1,8 @@
 import './App.css';
 import './App.scss';
-import ContactUs from './pages/ContactUs/ContactUs';
+
 function App() {
-  return (
-    <div className="App">
-      <ContactUs />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
