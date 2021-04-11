@@ -4,11 +4,90 @@
       "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
       "part2": "Switch language between english and arabic using button above."
     },
+    "NavBar":{
+      "donateFood":"Donate food",
+      "recieveFood":"Recieve food",
+      "about":"About",
+      "contact":"Contact Us"
+    },
+    "Footer":{
+      "credits":"© 2021 Foodna.  All rights reserved."
+    },
     "CtaButton":{
       "title": "Donate Now"
     },
     "HeroComponent":{
       "headline": "You have Extra food ?",
       "paragraph": "Foodna is a the bridge between you and a hungry unfortunate family out there that does have a dinner to eat today. Help them and change thier life."
-    }
+    },
+    "SponsorsComponent":{
+      "headline": "Our Sponsors",
+      "paragraph": "Our services would not be possible without the help of our generous supporters, donors, and sponsors who go above and beyond to keep foondna expand and grow."
+    },
+    "FeatureComponent":{
+      "Feature1":{
+        "title": "Feature that is amazing",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Feature2":{
+        "title": "Feature that is amazing",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Feature3":{
+        "title": "Feature that is amazing",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "ButtonTitle":"Learn More"
+    },
+    "AvailableMealsComponent":{
+      "headline": "Available Meals Right Now",
+      "paragraph": "If you are a chrity organization and you're looking for food donations then this is the perfect place for you."
+    },
+    "TestimonialComponent":{
+      "quote":"Charity brings to life again those who are spiritually dead.",
+      "personName":"Thomas Aquinas"
+    },
+    "NarrowCtaComponent":{
+      "title":"Want to help?",
+      "title2":"Donate now or contact us",
+      "contactUs":"Contact Us"
+    },
+    "DonationPage":{
+      "title": "Donate Your Extra Food",
+      "content": "Please fill the form bellow with the appropriate information to complete the donation process."
+    },
+    "ClaimMealComponent":{
+      "title":"Get this meal",
+      "Name":"Name",
+      "Email":"Email",
+      "Phone":"Phone",
+      "Organization":"Organization",
+      "getMealButton":"Get This Meal"
+    },
+    "ContactUsComponent":{
+      "title": "Contact Us",
+      "content": "If you have any questions about our services and wish to contact us, please fill out the form bellow and we will respond as soon as possible.",
+      "Name":"Name",
+      "Email":"Email",
+      "message":"Message",
+      "sendButton":"Send"
+    },
+    "PartnersComponent":"Who Works With Us ?",
+    "InfoComponent":{
+      "Info1":{
+        "title": "More info about us",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "subTitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Info2":{
+        "title": "More info about us",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "subTitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Info3":{
+        "title": "More info about us",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "subTitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
   }
+}
