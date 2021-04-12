@@ -14,6 +14,7 @@ function DonateForm() {
     description: '',
     address: '',
     photo: null,
+    availability: true,
   });
   const handleChange = (e) => {
     if (e.target.name === 'photo') {
