@@ -1,18 +1,10 @@
-.feature {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-}
-
 .feature-text {
-  position: inherit;
   text-align: left;
-  padding-left: 50px;
   justify-items: center;
   align-items: center;
 }
 
-.feature-img {
-  width: 100%;
-}
+/* .feature-img {
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+} */

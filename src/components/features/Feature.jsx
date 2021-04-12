@@ -1,33 +1,41 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import M from '../../dist/img/Media.png';
+import { Row, Col, Button } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
-function Feature() {
+function Feature({ index, image, title, description }) {
   return (
-    <div>
-      <Container>
-        <Row className="feature">
-          <Col>
-            <img
-              className="feature-img"
-              src={M}
-              alt="an image from the media"
-            />
-          </Col>
-          <Col className="feature-text">
-            <h1 className="mb-4">A feature</h1>
-            <p className="my-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the standard of the industry dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book.
-            </p>
-            <Button variant="outline-success">Learn more</Button>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <>
+      <Row className="no-gutters feature-img">
+        <Col
+          xs={{ span: 6, order: index % 2 === 0 ? 1 : 3 }}
+          className="d-none d-sm-block side-div"
+          style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover' }}
+        ></Col>
+        <Col xs={{ span: 1, order: 2 }} className="d-none d-sm-block"></Col>
+        <Col
+          xs={{ span: 5, order: index % 2 === 0 ? 3 : 1 }}
+          className="feature-text"
+        >
+          <div className="py-5">
+            <div className="py-5">
+              <h1 className="pt-4 mb-4">{title}</h1>
+              <p className="my-4">{description}</p>
+              <Button className="mb-4" variant="outline-success">
+                Learn more
+              </Button>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </>
   );
 }
 
 export default Feature;
+
+Feature.propTypes = {
+  index: PropTypes.number,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
