@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders apply now correctly 1`] = `
+<div
+  className="available-meals-page"
+>
+  <h1
+    className="available-meals-title"
+  >
+    Available Meals Right Now
+  </h1>
+  <p
+    className="available-meals-subtitle"
+  >
+    If you dont try this app you will never become the superhero you were meant to be
+  </p>
+  <div
+    className="meals-grid"
+  />
+</div>
+`;
