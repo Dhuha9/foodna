@@ -10,11 +10,10 @@ function DonateForm() {
     name: '',
     email: '',
     phone: '',
-    food: '',
     description: '',
     address: '',
     photo: null,
-    availability: true,
+    available: true,
   });
   const handleChange = (e) => {
     if (e.target.name === 'photo') {
@@ -27,10 +26,10 @@ function DonateForm() {
     e.preventDefault();
     console.log(value);
 
-    const doc = firebase.firestore().collection('DonateForm').doc();
+    const doc = firebase.firestore().collection('meals').doc();
     const id = doc.id;
 
-    const storageRef = firebase.storage().ref(`DonateForm/${id}`);
+    const storageRef = firebase.storage().ref(`meals/${id}`);
     const photoRef = storageRef.child(value.photo.name);
     const photo = await photoRef.put(value.photo);
 
