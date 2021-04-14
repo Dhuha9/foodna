@@ -1,0 +1,93 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "description": {
+      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+      "part2": "Switch language between english and arabic using button above."
+    },
+    "NavBar":{
+      "donateFood":"Donate food",
+      "recieveFood":"Recieve food",
+      "about":"About",
+      "contact":"Contact Us"
+    },
+    "Footer":{
+      "credits":"© 2021 Foodna.  All rights reserved."
+    },
+    "CtaButton":{
+      "title": "Donate Now"
+    },
+    "HeroComponent":{
+      "headline": "You have Extra food ?",
+      "paragraph": "Foodna is a bridge between you and a hungry unfortunate family out there that does have a dinner to eat today. Help them and change their  life."
+    },
+    "SponsorsComponent":{
+      "headline": "Our Sponsors",
+      "paragraph": "Our services would not be possible without the help of our generous supporters, donors, and sponsors who go above and beyond to keep foondna expand and grow."
+    },
+    "FeatureComponent":{
+      "Feature1":{
+        "title": "We fight hunger by sourcing food for people in need",
+        "content": "With foodna Donors are linked to those in need through existing non-profit hunger relief organizations. The food we distribute is used in vital food relief programs such as community pantries."
+      },
+      "Feature2":{
+        "title": "You Will Provide Food For The Underprivileged",
+        "content": "100% of your donations go towards providing life-saving meals. You can make a real difference by creating a donation for as little as a chewing-gum per day."
+      },
+      "Feature3":{
+        "title": "Let Nothing Be Wasted...",
+        "content": "We accept donations of all kinds of food and groceries from restaurants, hotels and even from individual who possess excessive amount of food."
+      },
+      "ButtonTitle":"Learn More"
+    },
+    "AvailableMealsComponent":{
+      "headline": "Available Meals Right Now",
+      "paragraph": "If you are a charity organization and you're looking for food donations then this is the perfect place for you."
+    },
+    "TestimonialComponent":{
+      "quote":"Charity brings to life again those who are spiritually dead.",
+      "personName":"Thomas Aquinas"
+    },
+    "NarrowCtaComponent":{
+      "title":"Want to help?",
+      "title2":"Donate now or contact us",
+      "contactUs":"Contact Us"
+    },
+    "DonationPage":{
+      "title": "Donate Your Extra Food",
+      "content": "Please fill the form below  with the appropriate information to complete the donation process."
+    },
+    "ClaimMealComponent":{
+      "title":"Get this meal",
+      "Name":"Name",
+      "Email":"Email",
+      "Phone":"Phone",
+      "Organization":"Organization",
+      "getMealButton":"Get This Meal"
+    },
+    "ContactUsComponent":{
+      "title": "Contact Us",
+      "content": "If you have any questions about our services and wish to contact us, please fill out the form below and we will respond as soon as possible.",
+      "Name":"Name",
+      "Email":"Email",
+      "message":"Message",
+      "sendButton":"Send"
+    },
+    "PartnersComponent":"Who Works With Us ?",
+    "InfoComponent":{
+      "Info1":{
+        "title": "What We Do ?",
+        "content": "Foodna provides an alternative to discarding surplus wholesome food by linking food service donors with surplus food to local hunger relief agencies.",
+        "subTitle":"We do this by creating and maintaining an efficient communication and reporting network that links available sources of food to those in need through these existing charitable organizations."
+      },
+      "Info2":{
+        "title": "We Can End Global Hunger",
+        "content": "The 2011 SIK study estimated the total of global food loss and waste to around one third of the edible parts of food produced for human consumption, amounting to about 1.3 billion tonnes per year",
+        "subTitle":"In contrast 1 in 7 children do not have enough food to lead a healthy and active life. That's why our services exist to reduce these numbers."
+      },
+      "Info3":{
+        "title": "How You Can Help ?",
+        "content": "If you are running a restaurant, hotel or you'tr just a normal person with plenty of food that you don't know what to do with, then this is the perfect place for you.",
+        "subTitle":"You can donate your excessive amount of food and we will deliver it to those in need through a non-profit hunger relief organizations."
+      }
+  }
+}
