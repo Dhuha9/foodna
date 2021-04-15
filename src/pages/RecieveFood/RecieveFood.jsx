@@ -1,5 +1,9 @@
 import React from 'react';
-
+import ClaimMeal from '../../components/ClaimMeal/ClaimMeal';
 export default function RecieveFood() {
-  return <div>RecieveFood</div>;
+  return (
+    <div>
+      <ClaimMeal />
+    </div>
+  );
 }

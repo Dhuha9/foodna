@@ -8,7 +8,7 @@ function Feature({ index, image, title, description }) {
       <Row className="no-gutters feature-img">
         <Col
           xs={{ span: 6, order: index % 2 === 0 ? 1 : 3 }}
-          className="d-none d-sm-block side-div"
+          className="d-none d-sm-block side-div h-vh"
           style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover' }}
         ></Col>
         <Col xs={{ span: 1, order: 2 }} className="d-none d-sm-block"></Col>
