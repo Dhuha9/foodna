@@ -9,7 +9,7 @@ const imgMap = { recodedLogo: recodedLogo };
 
 function Sponsors() {
   return (
-    <>
+    <div className="pb-5 pt-5 bg-light">
       <h1 className="heading text-center mb-4">Sponsors</h1>
       <p className="subheading  text-center mb-4">
         This project is generously sponsored by:
@@ -25,7 +25,7 @@ function Sponsors() {
           ))}
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
 

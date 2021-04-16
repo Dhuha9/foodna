@@ -5,9 +5,9 @@ import './Testimonial.scss';
 export default function Testimonial({ text, personImage, name, profession }) {
   return (
     <>
-      <blockquote className="p-4 blockquote">
+      <blockquote className="p-4 blockquote text-center">
         <h4>
-          <q className="font-weight-bold text-center">{text}</q>
+          <q className="font-weight-bold">{text}</q>
         </h4>
       </blockquote>
       <div className="d-block m-auto">

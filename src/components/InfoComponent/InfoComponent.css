@@ -1,124 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .InfoComponentStyle .gray-theme {
-    background-color:#F2F2F2;
-    color:#000;
+  background-color: #f2f2f2;
+  color: #000;
 }
 
 .InfoComponentStyle .gray-theme .info-img {
-    box-shadow: -50px -50px white;
-
+  box-shadow: -50px -50px white;
 }
 
 .InfoComponentStyle .green-theme {
-    background-color:#03B664;
-    color:#fff;
+  background-color: #03b664;
+  color: #fff;
 }
 
 .InfoComponentStyle .green-theme .info-img {
-    box-shadow: -50px -50px white;
-
+  box-shadow: -50px -50px white;
 }
 
 @media screen and (min-width: 600px) {
-    .InfoComponentStyle .green-theme {
-      display: table;
-      width: 100%;
-      direction: rtl;
-    }
-   
-    .InfoComponentStyle .green-theme content {
-      display: table-cell;
-      width: 25%;
-    }
+  .InfoComponentStyle .green-theme {
+    display: table;
+    width: 100%;
+    direction: rtl;
+  }
+
+  .InfoComponentStyle .green-theme content {
+    display: table-cell;
+    width: 25%;
+  }
 }
 
 .InfoComponentStyle .white-theme {
-    background-color:#fff;
-    color:#000;
+  background-color: #fff;
+  color: #000;
 }
 
 .InfoComponentStyle .white-theme .info-img {
-    box-shadow: -50px -50px #E5E5E5;
-
+  box-shadow: -50px -50px #e5e5e5;
 }
 
-.InfoComponentStyle .content, .media{
-    width: 50%;
-    display: inline-block;
+.InfoComponentStyle .content,
+.media1 {
+  width: 50%;
+  display: inline-block;
 }
 
-.InfoComponentStyle .content{
-    padding: 150px;
+.InfoComponentStyle .content {
+  padding: 150px;
 }
 
-.InfoComponentStyle .content h2{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 37px;
+.InfoComponentStyle .content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
 }
 
-.InfoComponentStyle .content p{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+.InfoComponentStyle .content p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
 }
 
-.InfoComponentStyle .content p.small{
-    font-family:'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.5);
+.InfoComponentStyle .content p.small {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.InfoComponentStyle .media{
-    text-align: center;
+.InfoComponentStyle .media1 {
+  text-align: center;
 }
 
 .InfoComponentStyle .info-img {
-    width: 400px;
+  width: 400px;
 }
 
-
 @media only screen and (max-width: 700px) {
-    /* For mobile screens */
-    .InfoComponentStyle .content, .media{
-        width: 100%;
-    }
+  /* For mobile screens */
+  .InfoComponentStyle .content,
+  .media1 {
+    width: 100%;
+  }
 
-    .InfoComponentStyle .content{
-        padding: 0px;
-    }
+  .InfoComponentStyle .content {
+    padding: 0px;
+  }
 
-    .InfoComponentStyle .info-img {
-        width: 200px;
-        box-shadow: none;
-        margin-top: 20px;
-    }
+  .InfoComponentStyle .info-img {
+    width: 200px;
+    box-shadow: none;
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    /* For Tablet screens */
-    .InfoComponentStyle .content, .media{
-        width: 100%;
-    }
+  /* For Tablet screens */
+  .InfoComponentStyle .content,
+  .media1 {
+    width: 100%;
+  }
 
-    .InfoComponentStyle .content{
-        padding: 90px;
-    }
+  .InfoComponentStyle .content {
+    padding: 90px;
+  }
 
-    .InfoComponentStyle .info-img {
-        margin-top: 90px;
-    }
-
+  .InfoComponentStyle .info-img {
+    margin-top: 90px;
+  }
 }

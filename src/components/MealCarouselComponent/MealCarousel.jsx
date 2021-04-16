@@ -3,8 +3,7 @@ import MealCard from '../MealCard/MealCard';
 import Carousel from 'react-elastic-carousel';
 import firebase from '../../firebase';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const breakpoints = [
   { width: 1, itemsToShow: 1 },
@@ -40,9 +39,12 @@ export default class Meals extends Component {
   render() {
     return (
       <div>
-        <div className="available-meals">
-          <h1 className="meals-title">Available Meals Right Now</h1>
-          <p className="meals-quote">
+        <div
+          className="text-center vh-100"
+          style={{ backgroundColor: '#03B664' }}
+        >
+          <h1 className="pt-5 pb-3 text-white">Available Meals Right Now</h1>
+          <p className="pb-4 text-white fs-3" style={{ fontSize: '20px' }}>
             If you dont try this app, you wont become the hero you were meant to
             be
           </p>
@@ -50,19 +52,19 @@ export default class Meals extends Component {
           <Carousel breakPoints={breakpoints}>
             {this.state.mealsCarousel.map((e) => {
               if (e.available)
-              return (
-                <div>
-                  <Link to={`/ClaimMeal/${e.id}`}>
-                    <MealCard
-                      key={e.id}
-                      img={e.image}
-                      title={e.title}
-                      organization={e.organization}
-                      id={e.id}
-                    />
-                  </Link>
-                </div>
-              );
+                return (
+                  <div>
+                    <Link to={`/recieve/${e.id}`}>
+                      <MealCard
+                        key={e.id}
+                        img={e.image}
+                        title={e.title}
+                        organization={e.organization}
+                        id={e.id}
+                      />
+                    </Link>
+                  </div>
+                );
             })}
           </Carousel>
         </div>

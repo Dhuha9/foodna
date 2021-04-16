@@ -34,7 +34,7 @@ export default function Footer() {
               </Link>
               <div className="align-self-end">&#169; 2021</div>
             </div>
-            <Link to="/" className="d-block text-dark mt-2">
+            <Link to="/" className="d-block text-dark mt-2 text-center">
               Privacy and Terms
             </Link>
           </Col>

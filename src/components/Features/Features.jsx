@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import Feature from './Feature';
 import './Features.scss';
 
@@ -11,7 +11,7 @@ import data from './data.json';
 const imgMap = { M1: M1, M2: M2 };
 function Features() {
   return (
-    <Container>
+    <div className="">
       {data.map((e, index) => (
         <Feature
           key={index}
@@ -21,7 +21,7 @@ function Features() {
           description={e.description}
         />
       ))}
-    </Container>
+    </div>
   );
 }
 
