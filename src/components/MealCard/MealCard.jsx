@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../meals.css';
+import { useTranslation } from 'react-i18next';
 
 export default function MealCard({ img, title, organization }) {
+  const { t } = useTranslation();
+
   return (
     <div className="card">
       <div className="image-section">
@@ -13,7 +16,7 @@ export default function MealCard({ img, title, organization }) {
         <span className="card-text">{organization}</span>
       </div>
       <button type="button" className="button w-100">
-        Get This Meal
+        {t('AvailableMealsComponent.button')}
       </button>
     </div>
   );

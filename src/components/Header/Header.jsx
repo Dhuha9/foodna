@@ -5,16 +5,17 @@ import { Link } from 'react-router-dom';
 import Login from '../OAuth/Login';
 import Logout from '../OAuth/Logout';
 import { UserContext } from '../../App';
-
-const navItems = [
-  { title: 'Recieve Food', path: '/meals' },
-  { title: 'Donate Food', path: '/donate' },
-  { title: 'About', path: '/about' },
-];
+import LangButton from '../LangButton/LangButton';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
   const userrefresh = useContext(UserContext);
-
+  const { t } = useTranslation();
+  const navItems = [
+    { title: t('NavBar.recieveFood'), path: '/meals' },
+    { title: t('NavBar.donateFood'), path: '/donate' },
+    { title: t('NavBar.about'), path: '/about' },
+  ];
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Navbar.Brand as={Link} to="/" className="mx-2">
@@ -33,6 +34,7 @@ export default function Header() {
           ))}
         </Nav>
         <Nav className="mx-4">{userrefresh.user ? <Logout /> : <Login />}</Nav>
+        <LangButton />
       </Navbar.Collapse>
     </Navbar>
   );

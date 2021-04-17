@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const buttonStyle = {
   width: '240px',
@@ -15,10 +16,12 @@ const buttonStyle = {
 };
 
 export default function CtaButton() {
+  const { t } = useTranslation();
+
   return (
     <Link to="/donate">
       <button className="btn btn-default" style={buttonStyle}>
-        Donate Now
+        {t('CtaButton.title')}
       </button>
     </Link>
   );

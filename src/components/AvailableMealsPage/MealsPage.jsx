@@ -4,10 +4,10 @@ import '../meals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import firebase from '../../firebase';
 import { Link } from 'react-router-dom';
-
+// import { useTranslation } from 'react-i18next';
 export default class MealsPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       meals: [],
     };
@@ -30,14 +30,14 @@ export default class MealsPage extends Component {
   }
 
   render() {
+    const { t } = this.props;
     return (
       <div className="available-meals-page">
         <h1 className="available-meals-title text-center">
-          Available Meals Right Now
+          {t('AvailableMealsComponent.headline')}
         </h1>
         <p className="available-meals-subtitle text-center">
-          If you dont try this app you will never become the superhero you were
-          meant to be
+          {t('AvailableMealsComponent.paragraph')}
         </p>
         <div className="meals-grid">
           {this.state.meals.map((meal) => {
