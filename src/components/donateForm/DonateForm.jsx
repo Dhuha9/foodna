@@ -152,7 +152,6 @@ function DonateForm() {
                 onChange={handleChange}
                 type="text"
                 placeholder="Enter your organization name"
-                required
               />
               <Form.Text className="text-muted">
                 Please type your organization name.
@@ -166,12 +165,13 @@ function DonateForm() {
                 onChange={handleChange}
                 as="textarea"
                 rows={3}
+                required
               />
             </Form.Group>
 
             <Form.File id="formcheck-api-regular">
               <Form.File.Label>Image</Form.File.Label>
-              <Form.File.Input name="image" onChange={handleChange} />
+              <Form.File.Input required name="image" onChange={handleChange} />
             </Form.File>
 
             <Button className="my-4" variant="success" type="submit">
