@@ -7,17 +7,18 @@ import 'firebase/storage';
 
 function DonateForm() {
   const [value, setValue] = useState({
+    title: '',
     name: '',
-    email: '',
     phone: '',
+    email: '',
+    quantity: '',
     description: '',
-    address: '',
-    photo: null,
+    image: null,
     available: true,
   });
   const handleChange = (e) => {
-    if (e.target.name === 'photo') {
-      setValue({ ...value, photo: e.target.files[0] });
+    if (e.target.name === 'image') {
+      setValue({ ...value, image: e.target.files[0] });
     } else {
       setValue({ ...value, [e.target.name]: e.target.value });
     }
@@ -30,12 +31,23 @@ function DonateForm() {
     const id = doc.id;
 
     const storageRef = firebase.storage().ref(`meals/${id}`);
-    const photoRef = storageRef.child(value.photo.name);
-    const photo = await photoRef.put(value.photo);
+    const imageRef = storageRef.child(value.image.name);
+    const image = await imageRef.put(value.image);
 
-    const downlaodUrl = await photo.ref.getDownloadURL();
+    const downlaodUrl = await image.ref.getDownloadURL();
 
-    doc.set({ ...value, photo: downlaodUrl });
+    doc.set({ ...value, image: downlaodUrl });
+    setValue({
+      title: '',
+      name: '',
+      phone: '',
+      email: '',
+      quantity: '',
+      description: '',
+      image: null,
+      available: true,
+    });
+    alert('Your meal has been submitted');
   };
 
   return (
@@ -61,9 +73,24 @@ function DonateForm() {
                 onChange={handleChange}
                 type="text"
                 placeholder="Enter your name"
+                required
               />
               <Form.Text className="text-muted">
                 Please type your full name.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPhone">
+              <Form.Label>Phone number</Form.Label>
+              <Form.Control
+                name="phone"
+                onChange={handleChange}
+                type="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+              <Form.Text className="text-muted">
+                We will never share your phone number with anyone else.
               </Form.Text>
             </Form.Group>
 
@@ -80,16 +107,17 @@ function DonateForm() {
               </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicPhone">
-              <Form.Label>Phone number</Form.Label>
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Meal Title</Form.Label>
               <Form.Control
-                name="phone"
+                name="title"
                 onChange={handleChange}
-                type="phone"
-                placeholder="Enter your phone number"
+                type="text"
+                placeholder="Enter the meal name"
+                required
               />
               <Form.Text className="text-muted">
-                We will never share your phone number with anyone else.
+                Please type meal name.
               </Form.Text>
             </Form.Group>
 
@@ -106,13 +134,27 @@ function DonateForm() {
             <Form.Group controlId="formBasicQuantity">
               <Form.Label>Quantity</Form.Label>
               <Form.Control
-                name="name"
+                name="quantity"
                 onChange={handleChange}
                 type="text"
                 placeholder="The quantity of food"
               />
               <Form.Text className="text-muted">
                 Please type the quantity of food.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Organization, Restaurant, or Individual</Form.Label>
+              <Form.Control
+                name="organization"
+                onChange={handleChange}
+                type="text"
+                placeholder="Enter your organization name"
+                required
+              />
+              <Form.Text className="text-muted">
+                Please type your organization name.
               </Form.Text>
             </Form.Group>
 
@@ -127,8 +169,8 @@ function DonateForm() {
             </Form.Group>
 
             <Form.File id="formcheck-api-regular">
-              <Form.File.Label>Photo</Form.File.Label>
-              <Form.File.Input name="photo" onChange={handleChange} />
+              <Form.File.Label>Image</Form.File.Label>
+              <Form.File.Input name="image" onChange={handleChange} />
             </Form.File>
 
             <Button className="my-4" variant="success" type="submit">
