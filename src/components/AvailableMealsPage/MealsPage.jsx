@@ -4,7 +4,6 @@ import '../meals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import firebase from '../../firebase';
 import { Link } from 'react-router-dom';
-// import { useTranslation } from 'react-i18next';
 export default class MealsPage extends Component {
   constructor(props) {
     super(props);

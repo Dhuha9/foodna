@@ -5,11 +5,14 @@ import './Features.scss';
 
 import M1 from '../../dist/img/Media1.png';
 import M2 from '../../dist/img/Media2.png';
+import { useTranslation } from 'react-i18next';
 
 import data from './data.json';
 
 const imgMap = { M1: M1, M2: M2 };
 function Features() {
+  const { t } = useTranslation();
+
   return (
     <div className="">
       {data.map((e, index) => (
@@ -17,8 +20,8 @@ function Features() {
           key={index}
           index={index}
           image={imgMap[e.image]}
-          title={e.title}
-          description={e.description}
+          title={t(`FeatureComponent.Feature${index}.title`)}
+          description={t(`FeatureComponent.Feature${index}.content`)}
         />
       ))}
     </div>

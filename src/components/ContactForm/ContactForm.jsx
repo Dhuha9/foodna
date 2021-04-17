@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import firebase from '../../firebase.js';
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 
 export default function ContactForm() {
   const [contact, setcontact] = useState({
@@ -11,8 +12,6 @@ export default function ContactForm() {
     email: '',
     message: '',
   });
-
-  console.log(contact);
 
   const handleChange = (e) => {
     setcontact({ ...contact, [e.target.name]: e.target.value });
@@ -47,17 +46,17 @@ export default function ContactForm() {
     firebase.firestore().collection('Contact').add(templateParams);
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="w-50 mx-auto my-5 text-left">
-      <h4 className="font-weight-bold">Contact Us</h4>
-      <div className="my-4">
-        Please leave your feedback and concernse and we will get back to you
-        soon
-      </div>
+      <h4 className="font-weight-bold"> {t('ContactUsComponent.title')}</h4>
+      <div className="my-4"> {t('ContactUsComponent.content')}</div>
       <Form onSubmit={handleSubmit} className="">
         <Form.Group controlId="formGroupPassword">
           <Form.Label>
-            Name<span className="text-danger"> *</span>
+            {t('ContactUsComponent.Name')}{' '}
+            <span className="text-danger"> *</span>
           </Form.Label>
           <Form.Control
             name="name"
@@ -68,7 +67,8 @@ export default function ContactForm() {
         </Form.Group>
         <Form.Group controlId="formGroupPassword">
           <Form.Label>
-            Subject<span className="text-danger"> *</span>
+            {t('ContactUsComponent.Subject')}{' '}
+            <span className="text-danger"> *</span>
           </Form.Label>
           <Form.Control
             name="subject"
@@ -79,7 +79,8 @@ export default function ContactForm() {
         </Form.Group>
         <Form.Group controlId="formGroupEmail">
           <Form.Label>
-            Email<span className="text-danger"> *</span>
+            {t('ContactUsComponent.Email')}{' '}
+            <span className="text-danger"> *</span>
           </Form.Label>
           <Form.Control
             name="email"
@@ -91,7 +92,8 @@ export default function ContactForm() {
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>
-            Message<span className="text-danger"> *</span>
+            {t('ContactUsComponent.Message')}
+            <span className="text-danger"> *</span>
           </Form.Label>
           <Form.Control
             name="message"
@@ -106,7 +108,7 @@ export default function ContactForm() {
           type="submit"
           style={{ backgroundColor: '#03B664' }}
         >
-          Send
+          {t('ContactUsComponent.sendButton')}
         </Button>
       </Form>
     </div>

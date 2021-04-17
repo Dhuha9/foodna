@@ -3,6 +3,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 function Feature({ index, image, title, description }) {
+  console.log(index);
   return (
     <>
       <Row className="no-gutters">
@@ -12,7 +13,6 @@ function Feature({ index, image, title, description }) {
           className="d-none d-sm-block vh-100"
           style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover' }}
         ></Col>
-        {/* <Col xs={{ span: 1, order: 2 }} className="d-none d-sm-block"></Col> */}
         <Col
           xs={{ span: 5, order: index % 2 === 0 ? 3 : 1 }}
           md={6}

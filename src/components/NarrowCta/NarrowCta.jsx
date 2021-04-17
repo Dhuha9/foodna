@@ -2,6 +2,7 @@ import React from 'react';
 import './NarrowCta.css';
 import CtaButton from '../CtaButton/CtaButton';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 var buttonStyle = {
   width: '240px',
@@ -16,18 +17,22 @@ var buttonStyle = {
 };
 
 export default function NarrowCta() {
+  const { t } = useTranslation();
+
   return (
     <div className="NarrowCtaStyle">
       <div className="ctaContainer">
         <div className="content">
-          <h4>Want to help?</h4>
-          <div>Donate now or contact us</div>
+          <h4>{t('NarrowCtaComponent.title')}</h4>
+          <div>{t('NarrowCtaComponent.title2')}</div>
         </div>
 
         <div className="buttons">
           <CtaButton />
           <Link to="/contact" style={buttonStyle}>
-            <button style={buttonStyle}>Contact Us</button>
+            <button style={buttonStyle}>
+              {t('NarrowCtaComponent.contactUs')}
+            </button>
           </Link>
         </div>
       </div>

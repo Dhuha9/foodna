@@ -1,17 +1,18 @@
 import React from 'react';
 import Hero from '../../components/HeroComponent/HeroComponent';
-import InfoComponent from '../../components/InfoComponent/InfoComponent';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import Partners from '../../components/Partners/Partners';
+import InfoComponents from '../../components/InfoComponent/InfoComponents';
+import { withTranslation } from 'react-i18next';
 
 export default function About() {
+  const TranslatedPartners = withTranslation()(Partners);
+
   return (
     <div>
       <Hero />
-      <Partners />
-      <InfoComponent color={'gray'} />
-      <InfoComponent color={'green'} />
-      <InfoComponent color={'white'} />
+      <TranslatedPartners />
+      <InfoComponents />
       <Testimonials bgColor={'bg-light'} />
     </div>
   );
