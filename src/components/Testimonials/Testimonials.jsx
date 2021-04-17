@@ -7,9 +7,9 @@ import TA1 from '../../dist/img/TA1.jpg';
 
 const imgMap = { TA: TA, TA1: TA1 };
 
-function Testimonials() {
+function Testimonials({ bgColor }) {
   return (
-    <Carousel>
+    <Carousel className={bgColor}>
       {data.map((testimonialsData, index) => (
         <Carousel.Item key={index} className="mt-3">
           <Testimonial

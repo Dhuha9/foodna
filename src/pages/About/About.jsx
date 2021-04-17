@@ -12,7 +12,7 @@ export default function About() {
       <InfoComponent color={'gray'} />
       <InfoComponent color={'green'} />
       <InfoComponent color={'white'} />
-      <Testimonials />
+      <Testimonials bgColor={'bg-light'} />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Main() {
       <Sponsors />
       <Features />
       <MealCarousel />
-      <Testimonials />
+      <Testimonials bgColor={'bg-white'} />
       <NarrowCta />
     </div>
   );
