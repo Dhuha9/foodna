@@ -8,10 +8,12 @@
     "donateFood": "Donate food",
     "recieveFood": "Recieve food",
     "about": "About",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "services": "Services",
+    "connect": "Connect"
   },
   "Footer": {
-    "credits": "© 2021 Foodna.  All rights reserved."
+    "credits": "All rights reserved."
   },
   "CtaButton": {
     "title": "Donate Now"

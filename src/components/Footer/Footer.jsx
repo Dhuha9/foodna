@@ -4,25 +4,27 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import foodnaLogo from '../../foodnaLogo.png';
 import { Link } from 'react-router-dom';
-
-const footerItems = [
-  {
-    title: 'Services',
-    items: [
-      { title: 'Donate Food', path: '/donate' },
-      { title: 'Available Meals', path: '/meals' },
-    ],
-  },
-  {
-    title: 'Connect',
-    items: [
-      { title: 'About Us', path: '/about' },
-      { title: 'Contact Us', path: '/contact' },
-    ],
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const footerItems = [
+    {
+      title: t('NavBar.services'),
+      items: [
+        { title: t('NavBar.donateFood'), path: '/donate' },
+        { title: t('NavBar.recieveFood'), path: '/meals' },
+      ],
+    },
+    {
+      title: t('NavBar.connect'),
+      items: [
+        { title: t('NavBar.about'), path: '/about' },
+        { title: t('NavBar.contact'), path: '/contact' },
+      ],
+    },
+  ];
+
   return (
     <div>
       <Container className="p-4 w-75 mx-auto">
@@ -35,7 +37,7 @@ export default function Footer() {
               <div className="align-self-end">&#169; 2021</div>
             </div>
             <Link to="/" className="d-block text-dark mt-2 text-center">
-              Privacy and Terms
+              {t(`Footer.credits`)}
             </Link>
           </Col>
           <Col md={1} lg={2}></Col>

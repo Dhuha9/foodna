@@ -8,10 +8,12 @@
     "donateFood": "تبرع بالطعام",
     "recieveFood": "احصل على الطعام",
     "about": "من نحن",
-    "contact": "اتصل بنا"
+    "contact": "اتصل بنا",
+    "services": "خدماتنا",
+    "connect": "تواصل معنا"
   },
   "Footer": {
-    "credits": "فودنا© 2021 جميع الحقوق محفوظة."
+    "credits": "جميع الحقوق محفوظة"
   },
   "CtaButton": {
     "title": "تبرع الأن"
