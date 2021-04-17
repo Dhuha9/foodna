@@ -2,11 +2,13 @@
 
 name: deploy to netlify
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - dev
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,25 +25,24 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.5
         with:
-            node-version: 14.x
-          
+          node-version: 14.x
+
       - name: Project Build
         run: |
-           yarn
-           yarn test
-           yarn lint
-           yarn build
-         
+          yarn
+          yarn test
+          yarn lint
+          yarn build
+
       - name: Netlify Deploy
         uses: netlify/actions/cli@master
-        with: 
+        with:
           args: deploy --dir=build --prod
-          
+
         env:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN}}
-            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
-         
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN}}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
