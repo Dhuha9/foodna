@@ -47,6 +47,7 @@ function DonateForm() {
       image: null,
       available: true,
     });
+    e.target.reset();
     alert('Your meal has been submitted');
   };
 
@@ -59,7 +60,7 @@ function DonateForm() {
           sm="4"
         ></Col>
         <Col xs="12" sm="8">
-          <h1 className="mb-4">Donate your nextra food</h1>
+          <h1 className="mb-4">Donate your extra food</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
