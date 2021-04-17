@@ -51,6 +51,7 @@ export default class MealsPage extends Component {
                       img={meal.image}
                       title={meal.title}
                       organization={meal.organization}
+                      bgColor={'buttonGreen'}
                     />
                   </Link>
                 </div>

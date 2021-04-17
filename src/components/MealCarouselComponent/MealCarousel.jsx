@@ -67,6 +67,7 @@ export default class Meals extends Component {
                         title={e.title}
                         organization={e.organization}
                         id={e.id}
+                        bgColor={'buttonGray'}
                       />
                     </Link>
                   </div>
