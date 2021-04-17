@@ -13,8 +13,8 @@ const breakpoints = [
 ];
 
 export default class Meals extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       mealsCarousel: [],
     };
@@ -37,16 +37,19 @@ export default class Meals extends Component {
   }
 
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         <div
           className="text-center vh-100"
           style={{ backgroundColor: '#03B664' }}
         >
-          <h1 className="pt-5 pb-3 text-white">Available Meals Right Now</h1>
+          <h1 className="pt-5 pb-3 text-white">
+            {t('AvailableMealsComponent.headline')}
+          </h1>
           <p className="pb-4 text-white fs-3" style={{ fontSize: '20px' }}>
-            If you dont try this app, you wont become the hero you were meant to
-            be
+            {t('AvailableMealsComponent.paragraph')}
           </p>
 
           <Carousel breakPoints={breakpoints}>
