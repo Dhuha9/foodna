@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react';
 import './App.css';
 import Routes from './Routes';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 export const UserContext = createContext();
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Routes />
       </UserContext.Provider>
+      <Footer />
     </div>
   );
 }
