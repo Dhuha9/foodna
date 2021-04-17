@@ -25,13 +25,10 @@ export default function NarrowCta() {
         </div>
 
         <div className="buttons">
-          <Link to="/">
-            <CtaButton />
+          <CtaButton />
+          <Link to="/contact" style={buttonStyle}>
+            <button style={buttonStyle}>Contact Us</button>
           </Link>
-          <Link to="/" style={buttonStyle}>
-            Contact Us
-          </Link>
-          {/* <button style={buttonStyle}>Contact Us</button> */}
         </div>
       </div>
     </div>
