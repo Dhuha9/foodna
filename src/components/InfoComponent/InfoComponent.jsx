@@ -5,7 +5,6 @@
 // <InfoComponent color={'white'}/>
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import './InfoComponent.css';
 export default function InfoComponent({ theme, title, content, subTitle }) {
   return (
@@ -23,7 +22,3 @@ export default function InfoComponent({ theme, title, content, subTitle }) {
     </div>
   );
 }
-
-InfoComponent.propTypes = {
-  color: PropTypes.string.isRequired,
-};

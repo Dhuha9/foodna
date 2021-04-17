@@ -8,7 +8,7 @@ exports[`renders when there are is no gray InfoComponent 1`] = `
     className="gray-theme"
   >
     <div
-      className="media"
+      className="media1"
     >
       <img
         alt=""
@@ -20,85 +20,15 @@ exports[`renders when there are is no gray InfoComponent 1`] = `
       className="content"
     >
       <h2>
-        More info about us
+        InfoComponent.Info1.title
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        InfoComponent.Info1.content
       </p>
       <p
         className="small"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`renders when there are is no green InfoComponent 1`] = `
-<div
-  className="InfoComponentStyle"
->
-  <div
-    className="green-theme"
-  >
-    <div
-      className="media"
-    >
-      <img
-        alt=""
-        className="info-img"
-        src="img/info2.jpg"
-      />
-    </div>
-    <div
-      className="content"
-    >
-      <h2>
-        More info about us
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p
-        className="small"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`renders when there are is no white InfoComponent 1`] = `
-<div
-  className="InfoComponentStyle"
->
-  <div
-    className="white-theme"
-  >
-    <div
-      className="media"
-    >
-      <img
-        alt=""
-        className="info-img"
-        src="img/info3.jpg"
-      />
-    </div>
-    <div
-      className="content"
-    >
-      <h2>
-        More info about us
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p
-        className="small"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        InfoComponent.Info1.subTitle
       </p>
     </div>
   </div>

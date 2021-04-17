@@ -5,14 +5,14 @@ exports[`renders apply now correctly 1`] = `
   className="available-meals-page"
 >
   <h1
-    className="available-meals-title"
+    className="available-meals-title text-center"
   >
-    Available Meals Right Now
+    AvailableMealsComponent.headline
   </h1>
   <p
-    className="available-meals-subtitle"
+    className="available-meals-subtitle text-center"
   >
-    If you dont try this app you will never become the superhero you were meant to be
+    AvailableMealsComponent.paragraph
   </p>
   <div
     className="meals-grid"

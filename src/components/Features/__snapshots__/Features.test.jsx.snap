@@ -2,13 +2,13 @@
 
 exports[`Features snapshot 1`] = `
 <div
-  className="container"
+  className=""
 >
   <div
-    className="no-gutters feature-img row"
+    className="no-gutters row"
   >
     <div
-      className="d-none d-sm-block side-div col-6 order-1"
+      className="d-none d-sm-block vh-100 col-md-6 col-6 order-1"
       style={
         Object {
           "backgroundImage": "url(Media1.png)",
@@ -17,26 +17,23 @@ exports[`Features snapshot 1`] = `
       }
     />
     <div
-      className="d-none d-sm-block col-1 order-2"
-    />
-    <div
-      className="feature-text col-5 order-3"
+      className="text-left justify-items-center align-items-center vh-100 px-5  w-50 col-md-6 col-5 order-3"
     >
       <div
-        className="py-5"
+        className="d-flex justify-content-center align-items-center py-5 px-5 vh-100 "
       >
         <div
-          className="py-5"
+          className="py-5 px-5"
         >
           <h1
             className="pt-4 mb-4"
           >
-            A feature
+            FeatureComponent.Feature0.title
           </h1>
           <p
             className="my-4"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            FeatureComponent.Feature0.content
           </p>
           <button
             className="mb-4 btn btn-outline-success"
@@ -50,10 +47,10 @@ exports[`Features snapshot 1`] = `
     </div>
   </div>
   <div
-    className="no-gutters feature-img row"
+    className="no-gutters row"
   >
     <div
-      className="d-none d-sm-block side-div col-6 order-3"
+      className="d-none d-sm-block vh-100 col-md-6 col-6 order-3"
       style={
         Object {
           "backgroundImage": "url(Media2.png)",
@@ -62,26 +59,23 @@ exports[`Features snapshot 1`] = `
       }
     />
     <div
-      className="d-none d-sm-block col-1 order-2"
-    />
-    <div
-      className="feature-text col-5 order-1"
+      className="text-left justify-items-center align-items-center vh-100 px-5  w-50 col-md-6 col-5 order-1"
     >
       <div
-        className="py-5"
+        className="d-flex justify-content-center align-items-center py-5 px-5 vh-100 "
       >
         <div
-          className="py-5"
+          className="py-5 px-5"
         >
           <h1
             className="pt-4 mb-4"
           >
-            A feature
+            FeatureComponent.Feature1.title
           </h1>
           <p
             className="my-4"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            FeatureComponent.Feature1.content
           </p>
           <button
             className="mb-4 btn btn-outline-success"

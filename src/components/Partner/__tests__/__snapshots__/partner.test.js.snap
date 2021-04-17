@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders apply now correctly 1`] = `
-<div>
+<div
+  className="w-75 mx-auto"
+>
   <img
     alt="sponsor"
     className="partner-image"

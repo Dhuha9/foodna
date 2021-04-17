@@ -28,11 +28,11 @@ exports[`Testimonials snapshot 1`] = `
       className="mt-3 active carousel-item"
     >
       <blockquote
-        className="p-4 blockquote"
+        className="p-4 blockquote text-center"
       >
         <h4>
           <q
-            className="font-weight-bold text-center"
+            className="font-weight-bold"
           >
             A well-known quote, contained in a blockquote element
           </q>
@@ -62,11 +62,11 @@ exports[`Testimonials snapshot 1`] = `
       className="mt-3 carousel-item"
     >
       <blockquote
-        className="p-4 blockquote"
+        className="p-4 blockquote text-center"
       >
         <h4>
           <q
-            className="font-weight-bold text-center"
+            className="font-weight-bold"
           >
             Another well-known quote, contained in a blockquote element
           </q>

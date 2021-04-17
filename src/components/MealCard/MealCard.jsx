@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../meals.css';
 import { useTranslation } from 'react-i18next';
 import noImage from '../../noImage.png';
@@ -23,8 +22,3 @@ export default function MealCard({ img, title, organization }) {
     </div>
   );
 }
-MealCard.propTypes = {
-  img: PropTypes.any,
-  title: PropTypes.any,
-  organization: PropTypes.any,
-};
