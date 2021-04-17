@@ -54,7 +54,10 @@ export default class Meals extends Component {
               if (e.available)
                 return (
                   <div>
-                    <Link to={`/recieve/${e.id}`}>
+                    <Link
+                      to={`/recieve/${e.id}`}
+                      style={{ textDecoration: 'none', color: '#000' }}
+                    >
                       <MealCard
                         key={e.id}
                         img={e.image}

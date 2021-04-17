@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const footerItems = [
   {
-    title: 'Feature',
+    title: 'Services',
     items: [
       { title: 'Donate Food', path: '/donate' },
       { title: 'Available Meals', path: '/meals' },

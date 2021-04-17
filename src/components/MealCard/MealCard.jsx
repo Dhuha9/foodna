@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../meals.css';
+import '../meals.css';
 
 export default function MealCard({ img, title, organization }) {
   return (
@@ -11,10 +11,10 @@ export default function MealCard({ img, title, organization }) {
       <div className="card-body">
         <h5 className="card-title ">{title}</h5>
         <span className="card-text">{organization}</span>
-        <button type="button" className="button">
-          Get This Meal
-        </button>{' '}
       </div>
+      <button type="button" className="button w-100">
+        Get This Meal
+      </button>
     </div>
   );
 }

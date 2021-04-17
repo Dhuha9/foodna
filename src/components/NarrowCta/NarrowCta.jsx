@@ -1,6 +1,7 @@
 import React from 'react';
 import './NarrowCta.css';
 import CtaButton from '../CtaButton/CtaButton';
+import { Link } from 'react-router-dom';
 
 var buttonStyle = {
   width: '240px',
@@ -22,9 +23,15 @@ export default function NarrowCta() {
           <h4>Want to help?</h4>
           <div>Donate now or contact us</div>
         </div>
+
         <div className="buttons">
-          <CtaButton />
-          <button style={buttonStyle}>Contact Us</button>
+          <Link to="/">
+            <CtaButton />
+          </Link>
+          <Link to="/" style={buttonStyle}>
+            Contact Us
+          </Link>
+          {/* <button style={buttonStyle}>Contact Us</button> */}
         </div>
       </div>
     </div>

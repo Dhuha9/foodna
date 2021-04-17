@@ -15,7 +15,7 @@
   padding-bottom: 50px;
 }
 
-.card {
+/* .card {
   height: 356px;
   width: 240px;
   top: 247px;
@@ -25,12 +25,12 @@
   margin-bottom: 50px;
   border: none;
   overflow: hidden;
-}
+} */
 
-.card-body {
+/* .card-body {
   width: 100%;
   height: 50%;
-}
+} */
 
 .button {
   background-color: #e5e5e5;
@@ -39,17 +39,20 @@
   border: 0;
   border: none;
   color: black;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .button:hover {
   color: #fff;
   background-color: #ffb701;
   border-color: #0062cc;
+  text-decoration: none !important;
 }
-
+.card *:hover {
+  text-decoration: none !important;
+}
 .image-section {
   overflow: hidden;
 }
@@ -72,14 +75,14 @@
   transform: scale(1.3);
 }
 
-.card-title {
+/* .card-title {
   position: absolute;
-}
+} */
 
 .card-text {
-  position: absolute;
+  /* position: absolute;
   bottom: 80px;
-  left: 18px;
+  left: 18px; */
   color: gray;
 }
 
@@ -99,7 +102,7 @@
 .available-meals-page {
   background-color: #f2f2f2;
   height: auto;
-  width: 1440;
+  width: 100%;
 }
 
 .available-meals-title {
@@ -116,8 +119,9 @@
 .meals-grid {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
-  margin-top: 80px;
   justify-content: center;
+  gap: 2rem;
+  padding: 80px 50px;
 }
 
 .meal-in-form {
