@@ -6,7 +6,7 @@ export default function MealCard({ img, title, organization, bgColor }) {
   const { t } = useTranslation();
 
   return (
-    <div className="card cardSize">
+    <div className="card cardSize mx-4">
       <div className="image-section">
         <img src={img || noImage} className="card-img" alt="food" />
       </div>

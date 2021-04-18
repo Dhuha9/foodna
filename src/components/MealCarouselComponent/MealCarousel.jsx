@@ -3,7 +3,8 @@ import MealCard from '../MealCard/MealCard';
 import Carousel from 'react-elastic-carousel';
 import firebase from '../../firebase';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import '../meals.css';
 
 const breakpoints = [
   { width: 1, itemsToShow: 1 },

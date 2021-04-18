@@ -153,3 +153,34 @@
     justify-content: center;
   }
 }
+.rec.rec-arrow {
+  background-color: #f2f2f2;
+  color: #03b664;
+}
+.rec.rec-dot {
+  border-color: #f2f2f2;
+}
+.rec.rec-dot {
+  box-shadow: 0 0 1px 2px #f2f2f2;
+}
+
+.rec.rec-dot_active {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 1px 3px #f2f2f2;
+}
+
+.rec.rec-arrow:hover {
+  background-color: #ffb701;
+  color: #f2f2f2;
+}
+
+.rec.rec-arrow:disabled {
+  background-color: #a8a6a6;
+  color: #b9b9b9;
+}
+
+.bSWeAW:hover:enabled,
+.bSWeAW:focus:enabled {
+  background-color: #ffb701;
+  color: #f2f2f2;
+}
