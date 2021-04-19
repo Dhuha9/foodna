@@ -15,7 +15,7 @@ function Sponsors() {
       <h1 className="heading text-center mb-4">
         {t('SponsorsComponent.headline')}
       </h1>
-      <p className="subheading  text-center mb-4">
+      <p className="subheading  text-center mb-4 px-4">
         {t('SponsorsComponent.paragraph')}
       </p>
       <Container>

@@ -24,7 +24,7 @@ export default function NarrowCta() {
       <div className="ctaContainer">
         <div className="content">
           <h4>{t('NarrowCtaComponent.title')}</h4>
-          <div>{t('NarrowCtaComponent.title2')}</div>
+          <p>{t('NarrowCtaComponent.title2')}</p>
         </div>
 
         <div className="buttons">

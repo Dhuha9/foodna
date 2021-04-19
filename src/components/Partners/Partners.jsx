@@ -7,7 +7,7 @@ export default class Partners extends Component {
     const { t } = this.props;
 
     return (
-      <div className="partners-section pb-5">
+      <div className="partners-section pb-5 ">
         <p className="partners-title">{t('PartnersComponent')}</p>
         <div className="partners-grid">
           {partnerData.map((partners, index) => {

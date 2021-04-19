@@ -125,6 +125,7 @@
 
     .ClaimMeal{
         display: block;
+        padding-bottom:30px;
     }
 
     .ClaimMeal .meal{

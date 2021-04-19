@@ -43,7 +43,7 @@ export default class Meals extends Component {
     return (
       <div>
         <div
-          className="text-center vh-100"
+          className="text-center vh-150 mb-5"
           style={{ backgroundColor: '#03B664' }}
         >
           <h1 className="pt-5 pb-3 text-white">

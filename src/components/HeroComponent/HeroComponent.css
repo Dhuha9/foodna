@@ -81,8 +81,29 @@
 
   .HeroComponentStyle p {
     width: 400px;
+    margin-top:40px;
+    margin-bottom:40px;
   }
   .HeroComponentStyle .side-crop img {
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  /* For small mobile screens */
+
+  .HeroComponentStyle h1 {
+    width: 290px;
+    font-size:30px;
+  }
+
+  .HeroComponentStyle p {
+    width: 290px;
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom:100px;
+  }
+  .HeroComponentStyle .side-crop img {
+    width: 300px;
   }
 }
