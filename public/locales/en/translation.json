@@ -47,8 +47,14 @@
     "button": "Get This Meal"
   },
   "TestimonialComponent": {
-    "quote": "Charity brings to life again those who are spiritually dead.",
-    "personName": "Thomas Aquinas"
+    "t1": {
+      "quote": "Charity brings to life again those who are spiritually dead.",
+      "personName": "Thomas Aquinas"
+    },
+    "t2": {
+      "quote": "Service to others is the rent you pay for your room here on earth.",
+      "personName": "Mohammed Ali"
+    }
   },
   "NarrowCtaComponent": {
     "title": "Want to help?",
@@ -57,7 +63,38 @@
   },
   "DonationPage": {
     "title": "Donate Your Extra Food",
-    "content": "Please fill the form below  with the appropriate information to complete the donation process."
+    "content": "Please fill the form below  with the appropriate information to complete the donation process.",
+
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your name",
+    "fullNameTxt": "Please type your full name.",
+
+    "phoneNumber": "Phone number",
+    "phoneNumberPlaceholder": "Enter your phone number",
+    "phoneNumberTxt": "We will never share your phone number with anyone else.",
+
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "emailTxt": "We will never share your email with anyone else.",
+
+    "mealTitle": "Meal Title",
+    "mealTitlePlaceholder": "Enter the meal name",
+    "mealTitleTxt": "Please type meal name.",
+
+    "description": "Description",
+
+    "quantity": "Quantity",
+    "quantityPlaceholder": "The quantity of food",
+    "quantityTxt": "Please type the quantity of food.",
+
+    "organization": "Organization, Restaurant, or Individual",
+    "organizationPlaceholder": "Enter your organization name",
+    "organizationTxt": "Please type your organization name.",
+
+    "address": "Address",
+
+    "image": "Image",
+    "submit": "Submit"
   },
   "ClaimMealComponent": {
     "title": "Get this meal",
