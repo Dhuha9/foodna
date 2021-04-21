@@ -2,7 +2,7 @@
 
 exports[`renders apply now correctly 1`] = `
 <div
-  className="card"
+  className="card cardSize mx-4"
 >
   <div
     className="image-section"
@@ -28,7 +28,7 @@ exports[`renders apply now correctly 1`] = `
     </span>
   </div>
   <button
-    className="button w-100"
+    className="button w-100 undefined"
     type="button"
   >
     AvailableMealsComponent.button

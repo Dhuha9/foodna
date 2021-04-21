@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders when there is no NarrowCta 1`] = `
+<div
+  className="NarrowCtaStyle"
+>
+  <div
+    className="ctaContainer"
+  >
+    <div
+      className="content"
+    >
+      <h4>
+        NarrowCtaComponent.title
+      </h4>
+      <p>
+        NarrowCtaComponent.title2
+      </p>
+    </div>
+    <div
+      className="buttons"
+    >
+      <a
+        href="/donate"
+        onClick={[Function]}
+      >
+        <button
+          className="btn btn-default"
+          style={
+            Object {
+              "backgroundColor": "#FFB701",
+              "border": "none",
+              "borderRadius": "5px",
+              "color": "#000",
+              "fontSamily": "roboto",
+              "fontSize": "18px",
+              "height": "60px",
+              "left": "calc(50% - 240px/2 - 1px)",
+              "top": "256px",
+              "width": "240px",
+            }
+          }
+        >
+          CtaButton.title
+        </button>
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F2F2F2",
+            "borderColor": "#000",
+            "borderRadius": "5px",
+            "fontSamily": "roboto",
+            "fontSize": "18px",
+            "height": "60px",
+            "left": "calc(50% - 240px/2 - 1px)",
+            "top": "256px",
+            "width": "240px",
+          }
+        }
+      >
+        <button
+          style={
+            Object {
+              "backgroundColor": "#F2F2F2",
+              "borderColor": "#000",
+              "borderRadius": "5px",
+              "fontSamily": "roboto",
+              "fontSize": "18px",
+              "height": "60px",
+              "left": "calc(50% - 240px/2 - 1px)",
+              "top": "256px",
+              "width": "240px",
+            }
+          }
+        >
+          NarrowCtaComponent.contactUs
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

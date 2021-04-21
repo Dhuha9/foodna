@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders when there are is no HeroComponent 1`] = `
+<div
+  className="HeroComponentStyle"
+>
+  <div
+    className="bg"
+  >
+    <h1>
+      HeroComponent.headline
+    </h1>
+    <p>
+      HeroComponent.paragraph
+    </p>
+    <a
+      href="/donate"
+      onClick={[Function]}
+    >
+      <button
+        className="btn btn-default"
+        style={
+          Object {
+            "backgroundColor": "#FFB701",
+            "border": "none",
+            "borderRadius": "5px",
+            "color": "#000",
+            "fontSamily": "roboto",
+            "fontSize": "18px",
+            "height": "60px",
+            "left": "calc(50% - 240px/2 - 1px)",
+            "top": "256px",
+            "width": "240px",
+          }
+        }
+      >
+        CtaButton.title
+      </button>
+    </a>
+    <div
+      className="side-crop"
+    >
+      <img
+        alt=""
+        className="hero-pic"
+        src="img/apple.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -2,7 +2,7 @@
 
 exports[`renders apply now correctly 1`] = `
 <div
-  className="w-75 mx-auto"
+  className="w-50 mx-auto"
 >
   <img
     alt="sponsor"

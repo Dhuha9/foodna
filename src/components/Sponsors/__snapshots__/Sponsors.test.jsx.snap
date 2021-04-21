@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sponsors snapshot 1`] = `
+<div
+  className="pb-5 pt-5 bg-light"
+>
+  <h1
+    className="heading text-center mb-4"
+  >
+    SponsorsComponent.headline
+  </h1>
+  <p
+    className="subheading  text-center mb-4 px-4"
+  >
+    SponsorsComponent.paragraph
+  </p>
+  <div
+    className="container"
+  >
+    <div
+      className="justify-content-center row no-gutters"
+    >
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="Re:coded"
+            className="sponsor-image"
+            src="ReCodedLogo.jpg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="Re:coded"
+            className="sponsor-image"
+            src="ReCodedLogo.jpg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="Re:coded"
+            className="sponsor-image"
+            src="ReCodedLogo.jpg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="Re:coded"
+            className="sponsor-image"
+            src="ReCodedLogo.jpg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.re-coded.com/"
+        >
+          <img
+            alt="Re:coded"
+            className="sponsor-image"
+            src="ReCodedLogo.jpg"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
