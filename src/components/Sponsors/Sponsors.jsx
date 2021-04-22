@@ -2,11 +2,40 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import './Sponsors.scss';
 import Sponsor from './Sponsor';
-import data from './data.json';
-import recodedLogo from '../../dist/img/ReCodedLogo.jpg';
 import { useTranslation } from 'react-i18next';
+import sponsor1 from '../../dist/img/sponsor1.png';
+import sponsor2 from '../../dist/img/sponsor2.png';
+import sponsor3 from '../../dist/img/sponsor3.png';
+import sponsor4 from '../../dist/img/sponsor4.png';
+import sponsor5 from '../../dist/img/sponsor5.png';
 
-const imgMap = { recodedLogo: recodedLogo };
+const data = [
+  {
+    name: 'Re:coded',
+    websiteUrl: 'https://www.re-coded.com/',
+    imagePath: sponsor1,
+  },
+  {
+    name: 'Re:coded',
+    websiteUrl: 'https://www.re-coded.com/',
+    imagePath: sponsor2,
+  },
+  {
+    name: 'Re:coded',
+    websiteUrl: 'https://www.re-coded.com/',
+    imagePath: sponsor3,
+  },
+  {
+    name: 'Re:coded',
+    websiteUrl: 'https://www.re-coded.com/',
+    imagePath: sponsor4,
+  },
+  {
+    name: 'Re:coded',
+    websiteUrl: 'https://www.re-coded.com/',
+    imagePath: sponsor5,
+  },
+];
 function Sponsors() {
   const { t } = useTranslation();
 
@@ -24,7 +53,7 @@ function Sponsors() {
             <Sponsor
               {...sponsorsData}
               key={index}
-              imageLogo={imgMap[sponsorsData.imageLogo]}
+              imageLogo={sponsorsData.imagePath}
             />
           ))}
         </Row>

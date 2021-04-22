@@ -6,7 +6,7 @@ function Sponsor({ websiteUrl, imageLogo, name }) {
   return (
     <Col>
       <a href={websiteUrl}>
-        <img className="sponsor-image" src={imageLogo} alt={name}></img>
+        <img className="sponsor-image mx-4" src={imageLogo} alt={name}></img>
       </a>
     </Col>
   );
