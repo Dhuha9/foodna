@@ -44,7 +44,8 @@
   "AvailableMealsComponent": {
     "headline": "Available Meals Right Now",
     "paragraph": "If you are a charity organization and you're looking for food donations then this is the perfect place for you.",
-    "button": "Get This Meal"
+    "button": "Get This Meal",
+    "NoData": "No Meals Yet"
   },
   "TestimonialComponent": {
     "t1": {

@@ -44,7 +44,8 @@
   "AvailableMealsComponent": {
     "headline": "الوجبات المتوفرة لدينا",
     "paragraph": "لو كنت منظمة خيرية تبحث عن تبرعات الطعام فهذا هو المكان المناسب لك",
-    "button": "احصل على الوجبة"
+    "button": "احصل على الوجبة",
+    "NoData": "لا توجد وجبات حاليا"
   },
   "TestimonialComponent": {
     "t1": {

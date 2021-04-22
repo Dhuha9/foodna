@@ -52,29 +52,34 @@ export default class Meals extends Component {
           <p className="pb-4 text-white fs-3" style={{ fontSize: '20px' }}>
             {t('AvailableMealsComponent.paragraph')}
           </p>
-
-          <Carousel breakPoints={breakpoints}>
-            {this.state.mealsCarousel.map((e) => {
-              if (e.available)
-                return (
-                  <div>
-                    <Link
-                      to={`/recieve/${e.id}`}
-                      style={{ textDecoration: 'none', color: '#000' }}
-                    >
-                      <MealCard
-                        key={e.id}
-                        img={e.image}
-                        title={e.title}
-                        organization={e.organization}
-                        id={e.id}
-                        bgColor={'buttonGray'}
-                      />
-                    </Link>
-                  </div>
-                );
-            })}
-          </Carousel>
+          {this.state.mealsCarousel.length === 0 ? (
+            <p className="pb-4 text-yello fs-3" style={{ fontSize: '20px' }}>
+              {t('AvailableMealsComponent.NoData')}
+            </p>
+          ) : (
+            <Carousel breakPoints={breakpoints}>
+              {this.state.mealsCarousel.map((e) => {
+                if (e.available)
+                  return (
+                    <div>
+                      <Link
+                        to={`/recieve/${e.id}`}
+                        style={{ textDecoration: 'none', color: '#000' }}
+                      >
+                        <MealCard
+                          key={e.id}
+                          img={e.image}
+                          title={e.title}
+                          organization={e.organization}
+                          id={e.id}
+                          bgColor={'buttonGray'}
+                        />
+                      </Link>
+                    </div>
+                  );
+              })}
+            </Carousel>
+          )}
         </div>
       </div>
     );
