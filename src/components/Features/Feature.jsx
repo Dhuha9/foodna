@@ -1,9 +1,10 @@
 import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 function Feature({ index, image, title, description }) {
-  console.log(index);
+  const { t } = useTranslation();
   return (
     <>
       <Row className="no-gutters">
@@ -22,8 +23,8 @@ function Feature({ index, image, title, description }) {
             <div className="py-5 px-5">
               <h1 className="pt-4 mb-4">{title}</h1>
               <p className="my-4">{description}</p>
-              <Button className="mb-4" variant="outline-success">
-                Learn more
+              <Button className="mb-4" variant="outline-success" href="/about">
+                {t(`FeatureComponent.ButtonTitle`)}
               </Button>
             </div>
           </div>
