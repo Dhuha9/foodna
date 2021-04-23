@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 function Sponsor({ websiteUrl, imageLogo, name }) {
   return (
-    <Col>
+    <Col className="p-2">
       <a href={websiteUrl}>
-        <img className="sponsor-image mx-4" src={imageLogo} alt={name}></img>
+        <img className="sponsor-image" src={imageLogo} alt={name}></img>
       </a>
     </Col>
   );

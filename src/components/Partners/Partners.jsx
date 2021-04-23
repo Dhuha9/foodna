@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Partner from '../Partner/Partner';
 import './partners.css';
+import { Container, Row } from 'react-bootstrap';
 
 import partners1 from '../../dist/img/sponsor1.png';
 import partners2 from '../../dist/img/sponsor2.png';
@@ -22,11 +23,13 @@ export default class Partners extends Component {
     return (
       <div className="partners-section pb-5 ">
         <p className="partners-title">{t('PartnersComponent')}</p>
-        <div className="partners-grid">
-          {partnerData.map((partners, index) => {
-            return <Partner key={index} img={partners.img} />;
-          })}
-        </div>
+        <Container>
+          <Row className="justify-content-center">
+            {partnerData.map((partners, index) => {
+              return <Partner key={index} img={partners.img} />;
+            })}
+          </Row>
+        </Container>
       </div>
     );
   }

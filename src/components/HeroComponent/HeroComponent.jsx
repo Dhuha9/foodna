@@ -9,7 +9,7 @@ export default function HeroComponent() {
   return (
     <div className="HeroComponentStyle">
       <div className="bg">
-        <h1>{t('HeroComponent.headline')}</h1>
+        <h1 className="m-2 d-block">{t('HeroComponent.headline')}</h1>
         <p>{t('HeroComponent.paragraph')}</p>
         <CtaButton />
         <div className="side-crop">

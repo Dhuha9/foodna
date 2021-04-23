@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Col } from 'react-bootstrap';
 
 export default class Partner extends Component {
   render() {
     return (
-      <div className="w-50 mx-auto">
+      <Col>
         <img className="partner-image" src={this.props.img} alt="sponsor" />
-      </div>
+      </Col>
     );
   }
 }
