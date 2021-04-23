@@ -25,7 +25,7 @@ export default function ContactForm() {
     message: contact.message,
     reply_to: contact.email,
   });
-
+  console.log(contact);
   const handleSubmit = (e) => {
     e.preventDefault();
     const templateParams = convertInputtoParams();
@@ -46,6 +46,7 @@ export default function ContactForm() {
       );
     firebase.firestore().collection('Contact').add(templateParams);
     setcontact(intialState);
+    alert('Your Message has been sent!');
   };
 
   const { t } = useTranslation();
@@ -63,6 +64,7 @@ export default function ContactForm() {
           <Form.Control
             name="name"
             type="text"
+            value={contact.name}
             placeholder="Enter Name"
             onChange={handleChange}
           />
@@ -75,6 +77,7 @@ export default function ContactForm() {
           <Form.Control
             name="subject"
             type="text"
+            value={contact.subject}
             placeholder="Enter Subject"
             onChange={handleChange}
           />
@@ -87,6 +90,7 @@ export default function ContactForm() {
           <Form.Control
             name="email"
             type="email"
+            value={contact.email}
             placeholder="Enter email"
             onChange={handleChange}
           />
@@ -100,6 +104,7 @@ export default function ContactForm() {
           <Form.Control
             name="message"
             as="textarea"
+            value={contact.message}
             rows={3}
             placeholder="Message"
             onChange={handleChange}
