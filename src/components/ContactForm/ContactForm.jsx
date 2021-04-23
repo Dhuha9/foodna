@@ -6,12 +6,13 @@ import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
 
 export default function ContactForm() {
-  const [contact, setcontact] = useState({
+  const intialState = {
     name: '',
     subject: '',
     email: '',
     message: '',
-  });
+  };
+  const [contact, setcontact] = useState(intialState);
 
   const handleChange = (e) => {
     setcontact({ ...contact, [e.target.name]: e.target.value });
@@ -44,6 +45,7 @@ export default function ContactForm() {
         }
       );
     firebase.firestore().collection('Contact').add(templateParams);
+    setcontact(intialState);
   };
 
   const { t } = useTranslation();
