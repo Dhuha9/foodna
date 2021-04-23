@@ -33,8 +33,10 @@ export default function Header() {
             </Nav.Link>
           ))}
         </Nav>
-        <Nav className="mx-4">{userrefresh.user ? <Logout /> : <Login />}</Nav>
-        <LangButton />
+        <Nav className="mx-2">{userrefresh.user ? <Logout /> : <Login />}</Nav>
+        <Nav className="mx-2">
+          <LangButton />
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
