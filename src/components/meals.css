@@ -75,15 +75,6 @@
   display: none;
 }
 
-.carousel-item {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-}
-
 .available-meals-page {
   background-color: #f2f2f2;
   height: auto;
