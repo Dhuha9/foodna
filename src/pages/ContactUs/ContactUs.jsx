@@ -11,7 +11,7 @@ export default function ContactUs() {
       <Col className="m-0 vh-100">
         <ContactForm />
       </Col>
-      <Col lg={5} className="m-0 p-0  w-50 d-sm-none d-md-block">
+      <Col lg={5} className="m-0 p-0  w-50 d-none d-md-block">
         <Image src={contactus} alt="" className="vh-100 w-100" fluid />
       </Col>
     </Row>
