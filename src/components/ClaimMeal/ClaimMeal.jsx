@@ -110,22 +110,28 @@ export default class ClaimMeal extends Component {
   }
 
   render() {
+    const { t } = this.props;
     return (
       <div className="ClaimMeal">
         <div className="meal">
           <img className="image" src={this.state.mealInfo.image} alt="" />
           <h4>{this.state.mealInfo.title}</h4>
           <p className="location">{this.state.mealInfo.organization}</p>
-          <p className="quantity">Quantity : {this.state.mealInfo.quantity}</p>
-          <p>Description : {this.state.mealInfo.description}</p>
+          <p className="quantity">
+            {t('ClaimMealComponent.Quantity')} : {this.state.mealInfo.quantity}
+          </p>
+          <p>
+            {t('ClaimMealComponent.Description')} :
+            {this.state.mealInfo.description}
+          </p>
         </div>
         <div className="form">
           <h4 className="ClaimMealStyle" style={{ marginBottom: 30 }}>
-            Get This Meal
+            {t('ClaimMealComponent.title')}
           </h4>
           <form onSubmit={this.handleSubmit} className="formStyle">
             <label>
-              Name <sup>*</sup>
+              {t('ClaimMealComponent.Name')} <sup>*</sup>
             </label>
             <input
               name="name"
@@ -135,7 +141,7 @@ export default class ClaimMeal extends Component {
               className="input"
             />
             <label>
-              Email <sup>*</sup>
+              {t('ClaimMealComponent.Email')} <sup>*</sup>
             </label>
             <input
               name="email"
@@ -145,7 +151,7 @@ export default class ClaimMeal extends Component {
               className="input"
             />
             <label>
-              Phone <sup>*</sup>
+              {t('ClaimMealComponent.Phone')} <sup>*</sup>
             </label>
             <input
               name="phone"
@@ -155,7 +161,8 @@ export default class ClaimMeal extends Component {
               className="input"
             />
             <label>
-              Organization <sup>*</sup>
+              {t('ClaimMealComponent.Organization')}
+              <sup>*</sup>
             </label>
             <input
               name="organization"
@@ -174,7 +181,11 @@ export default class ClaimMeal extends Component {
             ) : (
               'ReCAPCHA not working'
             )}
-            <input type="submit" value="Get This Meal" className="Submit" />
+            <input
+              type="submit"
+              value={t('ClaimMealComponent.getMealButton')}
+              className="Submit"
+            />
           </form>
         </div>
       </div>

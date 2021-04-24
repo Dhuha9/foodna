@@ -103,7 +103,9 @@
     "Email": "Email",
     "Phone": "Phone",
     "Organization": "Organization",
-    "getMealButton": "Get This Meal"
+    "getMealButton": "Get This Meal",
+    "Quantity": "Quantity",
+    "Description": "Description"
   },
   "ContactUsComponent": {
     "title": "Contact Us",

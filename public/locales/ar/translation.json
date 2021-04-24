@@ -103,7 +103,9 @@
     "Email": "البريد الالكتروني",
     "Phone": "رقم الهاتف",
     "Organization": "اسم المنظمة",
-    "getMealButton": "احصل على الوجبة"
+    "getMealButton": "احصل على الوجبة",
+    "Quantity": "الكمية",
+    "Description": "الوصف"
   },
   "ContactUsComponent": {
     "title": "اتصل بنا",
