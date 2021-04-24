@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import firebase from '../../firebase.js';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
-import './ContactForm.scss'
+import './ContactForm.scss';
 
 export default function ContactForm() {
   const intialState = {
@@ -53,9 +53,9 @@ export default function ContactForm() {
   const { t } = useTranslation();
 
   return (
-    <div className="contact-form mx-auto my-5 text-left">
+    <div className="contact-form mx-auto mt-2 text-left vh-100">
       <h4 className="font-weight-bold"> {t('ContactUsComponent.title')}</h4>
-      <div className="my-4"> {t('ContactUsComponent.content')}</div>
+      <div className="my-3"> {t('ContactUsComponent.content')}</div>
       <Form onSubmit={handleSubmit} className="">
         <Form.Group controlId="formGroupPassword">
           <Form.Label>
