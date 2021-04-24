@@ -68,31 +68,27 @@
 
     "fullName": "Full Name",
     "fullNamePlaceholder": "Enter your name",
-    "fullNameTxt": "Please type your full name.",
 
     "phoneNumber": "Phone number",
     "phoneNumberPlaceholder": "Enter your phone number",
-    "phoneNumberTxt": "We will never share your phone number with anyone else.",
 
     "email": "Email",
     "emailPlaceholder": "Enter email",
-    "emailTxt": "We will never share your email with anyone else.",
 
     "mealTitle": "Meal Title",
     "mealTitlePlaceholder": "Enter the meal name",
-    "mealTitleTxt": "Please type meal name.",
 
     "description": "Description",
+    "descriptionPlaceholder": "Enter Meal Description",
 
     "quantity": "Quantity",
     "quantityPlaceholder": "The quantity of food",
-    "quantityTxt": "Please type the quantity of food.",
 
     "organization": "Organization, Restaurant, or Individual",
     "organizationPlaceholder": "Enter your organization name",
-    "organizationTxt": "Please type your organization name.",
 
     "address": "Address",
+    "addressPlaceholder": "Enter your Address As Specifically as Possible",
 
     "image": "Image",
     "submit": "Submit"

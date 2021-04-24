@@ -72,112 +72,98 @@ function DonateForm() {
 
         <Form onSubmit={onSubmit}>
           <Form.Group controlId="formBasicName">
-            <Form.Label>Full Name</Form.Label>
+            <Form.Label>{t('DonationPage.fullName')}</Form.Label>
             <Form.Control
               name="name"
               onChange={handleChange}
               type="text"
-              placeholder="Enter your name"
+              placeholder={t('DonationPage.fullNamePlaceholder')}
               required
             />
-            <Form.Text className="text-muted">
-              Please type your full name.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasicPhone">
-            <Form.Label>Phone number</Form.Label>
+            <Form.Label>{t('DonationPage.phoneNumber')}</Form.Label>
             <Form.Control
               name="phone"
               onChange={handleChange}
               type="phone"
-              placeholder="Enter your phone number"
+              placeholder={t('DonationPage.phoneNumberPlaceholder')}
               required
             />
-            <Form.Text className="text-muted">
-              We will never share your phone number with anyone else.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>{t('DonationPage.email')}</Form.Label>
             <Form.Control
               name="email"
               onChange={handleChange}
               type="email"
-              placeholder="Enter email"
+              placeholder={t('DonationPage.emailPlaceholder')}
             />
-            <Form.Text className="text-muted">
-              We will never share your email with anyone else.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasicName">
-            <Form.Label>Meal Title</Form.Label>
+            <Form.Label>{t('DonationPage.mealTitle')}</Form.Label>
             <Form.Control
               name="title"
               onChange={handleChange}
               type="text"
-              placeholder="Enter the meal name"
+              placeholder={t('DonationPage.mealTitlePlaceholder')}
               required
             />
-            <Form.Text className="text-muted">Please type meal name.</Form.Text>
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Description</Form.Label>
+            <Form.Label>{t('DonationPage.description')}</Form.Label>
             <Form.Control
               name="description"
               onChange={handleChange}
               as="textarea"
               rows={3}
+              placeholder={t('DonationPage.descriptionPlaceholder')}
             />
           </Form.Group>
 
           <Form.Group controlId="formBasicQuantity">
-            <Form.Label>Quantity</Form.Label>
+            <Form.Label>{t('DonationPage.quantity')}</Form.Label>
             <Form.Control
               name="quantity"
               onChange={handleChange}
               type="text"
-              placeholder="The quantity of food"
+              placeholder={t('DonationPage.quantityPlaceholder')}
             />
-            <Form.Text className="text-muted">
-              Please type the quantity of food.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasicName">
-            <Form.Label>Organization, Restaurant, or Individual</Form.Label>
+            <Form.Label>{t('DonationPage.organization')}</Form.Label>
             <Form.Control
               name="organization"
               onChange={handleChange}
               type="text"
-              placeholder="Enter your organization name"
+              placeholder={t('DonationPage.organizationPlaceholder')}
             />
-            <Form.Text className="text-muted">
-              Please type your organization name.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Address</Form.Label>
+            <Form.Label>{t('DonationPage.address')}</Form.Label>
             <Form.Control
               name="address"
               onChange={handleChange}
               as="textarea"
               rows={3}
               required
+              placeholder={t('DonationPage.addressPlaceholder')}
             />
           </Form.Group>
 
           <Form.File id="formcheck-api-regular">
-            <Form.File.Label>Image</Form.File.Label>
+            <Form.File.Label>{t('DonationPage.image')}</Form.File.Label>
             <Form.File.Input required name="image" onChange={handleChange} />
           </Form.File>
 
           <Button className="my-4" variant="success" type="submit">
-            Submit
+            {t('DonationPage.submit')}
           </Button>
         </Form>
       </Col>
