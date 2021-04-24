@@ -55,22 +55,15 @@ function DonateForm() {
   };
 
   return (
-    <Row className="text-left overflow-hidden">
+    <Row className="text-left" style={{ backgroundColor: '#F2F2F2' }}>
       <Col
-        className="d-none d-sm-block side-div"
-        style={{ backgroundImage: `url(${M})`, backgroundSize: 'contain' }}
-        sm="4"
+        className="d-none d-md-block side-div"
+        style={{ backgroundImage: `url(${M})` }}
       ></Col>
-      <Col
-        xs="12"
-        sm="8"
-        className="py-4"
-        style={{ backgroundColor: '#F2F2F2' }}
-      >
-        <h1 className="mb-4">{t('DonationPage.title')}</h1>
-        <p>{t('DonationPage.content')}</p>
-
-        <Form onSubmit={onSubmit}>
+      <Col className="pt-3" lg={7}>
+        <Form onSubmit={onSubmit} className="mx-auto my-4 w-75">
+          <h1 className="mb-4">{t('DonationPage.title')}</h1>
+          <p>{t('DonationPage.content')}</p>
           <Form.Group controlId="formBasicName">
             <Form.Label>{t('DonationPage.fullName')}</Form.Label>
             <Form.Control
