@@ -14,12 +14,12 @@ const themes = [
     img: 'img/info1.jpg',
   },
   {
-    class: 'green-theme',
-    img: 'img/info2.jpg',
-  },
-  {
     class: 'white-theme',
     img: 'img/info3.jpg',
+  },
+  {
+    class: 'green-theme',
+    img: 'img/info2.jpg',
   },
 ];
 

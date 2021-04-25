@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from '../../components/HeroComponent/HeroComponent';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import Partners from '../../components/Partners/Partners';
 import InfoComponents from '../../components/InfoComponent/InfoComponents';
@@ -10,9 +9,8 @@ export default function About() {
 
   return (
     <div>
-      <Hero />
-      <TranslatedPartners />
       <InfoComponents />
+      <TranslatedPartners />
       <Testimonials bgColor={'bg-light'} />
     </div>
   );
