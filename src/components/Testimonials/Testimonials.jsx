@@ -7,7 +7,7 @@ function Testimonials({ bgColor }) {
   const { t } = useTranslation();
 
   return (
-    <Carousel className={bgColor + ' px-5 pt-4'}>
+    <Carousel className={bgColor + ' px-xl-5 pt-4'}>
       <Carousel.Item>
         <Testimonial
           text={t('TestimonialComponent.t1.quote')}
