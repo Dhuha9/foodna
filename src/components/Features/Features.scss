@@ -1,10 +1,31 @@
 .feature-text {
-  text-align: left;
-  justify-items: center;
-  align-items: center;
+  & h1 {
+    font-size: 30px;
+  }
+  & p {
+    font-size: 17px;
+  }
 }
 
-/* .feature-img {
-  margin-bottom: -1px;
-  padding-bottom: 1px;
-} */
+.feature_height {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .feature-width {
+    width: 50%;
+  }
+  .feature-text {
+    & h1 {
+      font-size: 50px;
+    }
+    & p {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .feature_height {
+    height: 100vh;
+  }
+}
