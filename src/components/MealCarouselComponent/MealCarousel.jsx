@@ -43,17 +43,17 @@ export default class Meals extends Component {
     return (
       <div>
         <div
-          className="text-center vh-150 mb-5"
+          className="text-center vh-150 py-5"
           style={{ backgroundColor: '#03B664' }}
         >
-          <h1 className="pt-5 pb-3 text-white">
+          <h1 className="py-3 text-white  px-3">
             {t('AvailableMealsComponent.headline')}
           </h1>
-          <p className="pb-4 text-white fs-3" style={{ fontSize: '20px' }}>
+          <p className="pb-4 text-white px-3" style={{ fontSize: '20px' }}>
             {t('AvailableMealsComponent.paragraph')}
           </p>
           {this.state.mealsCarousel.length === 0 ? (
-            <p className="pb-4 text-yello fs-3" style={{ fontSize: '20px' }}>
+            <p className="pb-4 text-yello px-3" style={{ fontSize: '20px' }}>
               {t('AvailableMealsComponent.NoData')}
             </p>
           ) : (
