@@ -3,12 +3,11 @@ import Testimonial from './Testimonial';
 import { Carousel } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-
 function Testimonials({ bgColor }) {
   const { t } = useTranslation();
 
   return (
-    <Carousel className={bgColor}>
+    <Carousel className={bgColor + ' px-5 pt-4'}>
       <Carousel.Item>
         <Testimonial
           text={t('TestimonialComponent.t1.quote')}
