@@ -49,12 +49,14 @@
   },
   "TestimonialComponent": {
     "t1": {
-      "quote": "Charity brings to life again those who are spiritually dead.",
-      "personName": "Thomas Aquinas"
+      "quote": "Building a centralized platform for food redistribution is a promising step towards both minimizing food wastage and providing more nourishment for those in need.",
+      "personName": "Abdulazeez Alabbasi",
+      "profession": "Foodna Team"
     },
     "t2": {
-      "quote": "Service to others is the rent you pay for your room here on earth.",
-      "personName": "Mohammed Ali"
+      "quote": "Using our technology skills to help our people will always give good results, and we're excited to make this serve the community.",
+      "personName": "Tabarek Ayad",
+      "profession": "Foodna Team"
     }
   },
   "NarrowCtaComponent": {

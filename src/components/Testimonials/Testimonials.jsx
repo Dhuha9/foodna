@@ -1,23 +1,30 @@
 import React from 'react';
 import Testimonial from './Testimonial';
-import data from './data.json';
 import { Carousel } from 'react-bootstrap';
-import TA from '../../dist/img/TA.jpg';
-import TA1 from '../../dist/img/TA1.jpg';
+import { useTranslation } from 'react-i18next';
 
-const imgMap = { TA: TA, TA1: TA1 };
 
 function Testimonials({ bgColor }) {
+  const { t } = useTranslation();
+
   return (
     <Carousel className={bgColor}>
-      {data.map((testimonialsData, index) => (
-        <Carousel.Item key={index} className="mt-3">
-          <Testimonial
-            {...testimonialsData}
-            personImage={imgMap[testimonialsData.personImage]}
-          />
-        </Carousel.Item>
-      ))}
+      <Carousel.Item>
+        <Testimonial
+          text={t('TestimonialComponent.t1.quote')}
+          name={t('TestimonialComponent.t1.personName')}
+          profession={t('TestimonialComponent.t1.profession')}
+          personImage="img/Abdulazeez.jpg"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Testimonial
+          text={t('TestimonialComponent.t2.quote')}
+          name={t('TestimonialComponent.t2.personName')}
+          profession={t('TestimonialComponent.t2.profession')}
+          personImage="img/Tabarek.png"
+        />
+      </Carousel.Item>
     </Carousel>
   );
 }
