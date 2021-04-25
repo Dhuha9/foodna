@@ -168,8 +168,8 @@
 }
 
 .rec.rec-arrow:hover {
-  background-color: #ffb701;
-  color: #f2f2f2;
+  background-color: #ffb701 !important;
+  color: #f2f2f2 !important;
 }
 
 .rec.rec-arrow:disabled {
@@ -179,6 +179,12 @@
 
 .bSWeAW:hover:enabled,
 .bSWeAW:focus:enabled {
+  background-color: #ffb701 !important;
+  color: #f2f2f2 !important;
+}
+
+.iubhXh:hover:enabled,
+.iubhXh:focus:enabled {
   background-color: #ffb701 !important;
   color: #f2f2f2 !important;
 }
